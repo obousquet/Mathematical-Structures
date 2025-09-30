@@ -1,0 +1,8 @@
+{
+  "id": 2,
+  "name": "A Functor is an ST Map",
+  "short_name": "functor_st_map",
+  "containee": "#functor",
+  "container": "#st_map",
+  "witness": ""
+}

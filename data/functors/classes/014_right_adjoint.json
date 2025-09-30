@@ -1,0 +1,9 @@
+{
+  "id": 14,
+  "name": "Right Adjoint Functor",
+  "short_name": "right_adjoint",
+  "symbol": "",
+  "definition": "A **Functor** $F:C\\to D$ is a **right adjoint** if there exists a functor $G:D\\to C$ and a natural isomorphism $Hom_D(F(X),Y) \\cong Hom_C(X,G(Y))$ for all $X$ in $C$, $Y$ in $D$.",
+  "description": "A #functor is right adjoint if it is part of an adjunction as the right adjoint.",
+  "comments": ""
+}

@@ -1,0 +1,8 @@
+{
+  "id": 38,
+  "name": "A Functor that Preserves Colimits is Right Exact",
+  "short_name": "preserves_colimits_right_exact",
+  "containee": "#preserves_colimits",
+  "container": "#right_exact",
+  "witness": ""
+}

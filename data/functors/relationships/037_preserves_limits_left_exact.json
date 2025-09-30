@@ -1,0 +1,8 @@
+{
+  "id": 37,
+  "name": "A Functor that Preserves Limits is Left Exact",
+  "short_name": "preserves_limits_left_exact",
+  "containee": "#preserves_limits",
+  "container": "#left_exact",
+  "witness": ""
+}

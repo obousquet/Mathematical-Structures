@@ -1,0 +1,8 @@
+{
+  "id": 44,
+  "name": "A Pseudomonic Functor is Conservative",
+  "short_name": "pseudomonic_conservative",
+  "containee": "#pseudomonic",
+  "container": "#conservative",
+  "witness": ""
+}

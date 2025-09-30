@@ -1,0 +1,8 @@
+{
+  "id": 20,
+  "name": "A Right Adjoint Functor is a Functor",
+  "short_name": "right_adjoint_functor",
+  "containee": "#right_adjoint",
+  "container": "#functor",
+  "witness": ""
+}

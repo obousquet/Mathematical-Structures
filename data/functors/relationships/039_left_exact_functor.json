@@ -1,0 +1,8 @@
+{
+  "id": 39,
+  "name": "A Left Exact Functor is a Functor",
+  "short_name": "left_exact_functor",
+  "containee": "#left_exact",
+  "container": "#functor",
+  "witness": ""
+}

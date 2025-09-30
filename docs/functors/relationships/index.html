@@ -1,0 +1,709 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Mathematical-Structures/functors/">
+        <title>Relationships between classes - Functors</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+    
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                }
+            };</script>
+    </head>
+    <body>
+        <header>
+            <h1>Relationships between classes - Functors</h1>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Mathematical-Structures/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
+        </div>
+    
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="classes/index.html">Classes</a></li><li><a href="relationships/index.html">Relationships</a></li><li><a href="witnesses/index.html">Witnesses</a></li></ul>
+        </div>
+    
+            </nav>
+        </header>
+        <main class="table-container">
+            
+            <div class="table-description">
+                <p>Relationships between classes</p>
+            </div>
+            <div class="table-grid">
+                
+    <div class="table-card" id="math-1" style="position:relative;">
+        
+        <h3><a href="relationships/st_map_map.html" class="table-title-link">A ST Map is a Map</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A ST Map is a Map</p>
+<p><strong>Contained Class: </strong><a href="classes/st_map.html">Source and Target Preserving Map</a></p>
+<p><strong>Container Class: </strong><a href="classes/map.html">Map of Categories</a></p>
+<p><strong>Witness: </strong><a href="witnesses/map_not_st_map.html">A Map of Categories which does not preserve sources and targets</a></p>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-2" style="position:relative;">
+        
+        <h3><a href="relationships/functor_st_map.html" class="table-title-link">A Functor is an ST Map</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Functor is an ST Map</p>
+<p><strong>Contained Class: </strong><a href="classes/functor.html">Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/st_map.html">Source and Target Preserving Map</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-3" style="position:relative;">
+        
+        <h3><a href="relationships/fully_faithful_full.html" class="table-title-link">A Fully Faithful Functor is Full</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Fully Faithful Functor is Full</p>
+<p><strong>Contained Class: </strong><a href="classes/fully_faithful.html">Fully Faithful Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/full.html">Full Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-4" style="position:relative;">
+        
+        <h3><a href="relationships/fully_faithful_faithful.html" class="table-title-link">A Fully Faithful Functor is Faithful</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Fully Faithful Functor is Faithful</p>
+<p><strong>Contained Class: </strong><a href="classes/fully_faithful.html">Fully Faithful Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/faithful.html">Faithful Functor</a></p>
+<p><strong>Witness: </strong><a href="witnesses/full_not_faithful.html">A Full but not Faithful Functor</a></p>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-5" style="position:relative;">
+        
+        <h3><a href="relationships/full_functor_functor.html" class="table-title-link">A Full Functor is a Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Full Functor is a Functor</p>
+<p><strong>Contained Class: </strong><a href="classes/full.html">Full Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/functor.html">Functor</a></p>
+<p><strong>Witness: </strong><a href="witnesses/faithful_not_full.html">A Faithful but not Full Functor</a></p>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-6" style="position:relative;">
+        
+        <h3><a href="relationships/faithful_functor.html" class="table-title-link">A Faithful Functor is a Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Faithful Functor is a Functor</p>
+<p><strong>Contained Class: </strong><a href="classes/faithful.html">Faithful Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/functor.html">Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-7" style="position:relative;">
+        
+        <h3><a href="relationships/embedding_fully_faithful.html" class="table-title-link">An Embedding Functor is Fully Faithful</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Embedding Functor is Fully Faithful</p>
+<p><strong>Contained Class: </strong><a href="classes/embedding.html">Embedding Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/fully_faithful.html">Fully Faithful Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-8" style="position:relative;">
+        
+        <h3><a href="relationships/embedding_injective_on_objects.html" class="table-title-link">An Embedding Functor is Injective-on-objects</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Embedding Functor is Injective-on-objects</p>
+<p><strong>Contained Class: </strong><a href="classes/embedding.html">Embedding Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/injective-on-objects.html">Injective-on-objects Functor</a></p>
+<p><strong>Witness: </strong><a href="witnesses/injective_not_fully_faithful.html">Injective-on-objects but not Fully Faithful Functor</a></p>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-9" style="position:relative;">
+        
+        <h3><a href="relationships/equivalence_fully_faithful.html" class="table-title-link">An Equivalence Functor is Fully Faithful</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Equivalence Functor is Fully Faithful</p>
+<p><strong>Contained Class: </strong><a href="classes/equivalence.html">Equivalence of Categories</a></p>
+<p><strong>Container Class: </strong><a href="classes/fully_faithful.html">Fully Faithful Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-10" style="position:relative;">
+        
+        <h3><a href="relationships/equivalence_essentially_surjective.html" class="table-title-link">An Equivalence Functor is Essentially Surjective</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Equivalence Functor is Essentially Surjective</p>
+<p><strong>Contained Class: </strong><a href="classes/equivalence.html">Equivalence of Categories</a></p>
+<p><strong>Container Class: </strong><a href="classes/essentially-surjective.html">Essentially Surjective Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-11" style="position:relative;">
+        
+        <h3><a href="relationships/bijective_on_objects_injective_on_objects.html" class="table-title-link">A Bijective-on-objects Functor is Injective-on-objects</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Bijective-on-objects Functor is Injective-on-objects</p>
+<p><strong>Contained Class: </strong><a href="classes/bijective-on-objects.html">Bijective-on-objects Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/injective-on-objects.html">Injective-on-objects Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-12" style="position:relative;">
+        
+        <h3><a href="relationships/bijective_on_objects_surjective_on_objects.html" class="table-title-link">A Bijective-on-objects Functor is Surjective-on-objects</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Bijective-on-objects Functor is Surjective-on-objects</p>
+<p><strong>Contained Class: </strong><a href="classes/bijective-on-objects.html">Bijective-on-objects Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/surjective-on-objects.html">Surjective-on-objects Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-13" style="position:relative;">
+        
+        <h3><a href="relationships/essentially_injective_injective_on_objects.html" class="table-title-link">An Essentially Injective Functor is Injective-on-objects</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Essentially Injective Functor is Injective-on-objects</p>
+<p><strong>Contained Class: </strong><a href="classes/essentially-injective.html">Essentially Injective Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/injective-on-objects.html">Injective-on-objects Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-14" style="position:relative;">
+        
+        <h3><a href="relationships/bijective_on_objects_essentially_injective.html" class="table-title-link">A Bijective-on-objects Functor is Essentially Injective</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Bijective-on-objects Functor is Essentially Injective</p>
+<p><strong>Contained Class: </strong><a href="classes/bijective-on-objects.html">Bijective-on-objects Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/essentially-injective.html">Essentially Injective Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-15" style="position:relative;">
+        
+        <h3><a href="relationships/bijective_on_objects_essentially_surjective.html" class="table-title-link">A Bijective-on-objects Functor is Essentially Surjective</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Bijective-on-objects Functor is Essentially Surjective</p>
+<p><strong>Contained Class: </strong><a href="classes/bijective-on-objects.html">Bijective-on-objects Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/essentially-surjective.html">Essentially Surjective Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-16" style="position:relative;">
+        
+        <h3><a href="relationships/essentially_surjective_surjective_on_objects.html" class="table-title-link">An Essentially Surjective Functor is Surjective-on-objects</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Essentially Surjective Functor is Surjective-on-objects</p>
+<p><strong>Contained Class: </strong><a href="classes/essentially-surjective.html">Essentially Surjective Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/surjective-on-objects.html">Surjective-on-objects Functor</a></p>
+<p><strong>Witness: </strong><a href="witnesses/essentially_surjective_not_surjective_on_objects.html">Essentially Surjective but not Surjective-on-objects Functor</a></p>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-17" style="position:relative;">
+        
+        <h3><a href="relationships/isomorphism_equivalence.html" class="table-title-link">An Isomorphism of Categories is an Equivalence</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Isomorphism of Categories is an Equivalence</p>
+<p><strong>Contained Class: </strong><a href="classes/isomorphism.html">Isomorphism of Categories</a></p>
+<p><strong>Container Class: </strong><a href="classes/equivalence.html">Equivalence of Categories</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-18" style="position:relative;">
+        
+        <h3><a href="relationships/isomorphism_bijective_on_objects.html" class="table-title-link">An Isomorphism of Categories is Bijective-on-objects</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Isomorphism of Categories is Bijective-on-objects</p>
+<p><strong>Contained Class: </strong><a href="classes/isomorphism.html">Isomorphism of Categories</a></p>
+<p><strong>Container Class: </strong><a href="classes/bijective-on-objects.html">Bijective-on-objects Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-19" style="position:relative;">
+        
+        <h3><a href="relationships/left_adjoint_functor.html" class="table-title-link">A Left Adjoint Functor is a Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Left Adjoint Functor is a Functor</p>
+<p><strong>Contained Class: </strong><a href="classes/left_adjoint.html">Left Adjoint Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/functor.html">Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-20" style="position:relative;">
+        
+        <h3><a href="relationships/right_adjoint_functor.html" class="table-title-link">A Right Adjoint Functor is a Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Right Adjoint Functor is a Functor</p>
+<p><strong>Contained Class: </strong><a href="classes/right_adjoint.html">Right Adjoint Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/functor.html">Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-21" style="position:relative;">
+        
+        <h3><a href="relationships/monadic_right_adjoint.html" class="table-title-link">A Monadic Functor is a Right Adjoint</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Monadic Functor is a Right Adjoint</p>
+<p><strong>Contained Class: </strong><a href="classes/monadic.html">Monadic Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/right_adjoint.html">Right Adjoint Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-22" style="position:relative;">
+        
+        <h3><a href="relationships/isomorphism_embedding.html" class="table-title-link">An Isomorphism of Categories is an Embedding</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Isomorphism of Categories is an Embedding</p>
+<p><strong>Contained Class: </strong><a href="classes/isomorphism.html">Isomorphism of Categories</a></p>
+<p><strong>Container Class: </strong><a href="classes/embedding.html">Embedding Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-23" style="position:relative;">
+        
+        <h3><a href="relationships/monadic_faithful.html" class="table-title-link">A Monadic Functor is Faithful</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Monadic Functor is Faithful</p>
+<p><strong>Contained Class: </strong><a href="classes/monadic.html">Monadic Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/faithful.html">Faithful Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-24" style="position:relative;">
+        
+        <h3><a href="relationships/left_adjoint_preserves_colimits.html" class="table-title-link">A Left Adjoint Functor Preserves Colimits</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Left Adjoint Functor Preserves Colimits</p>
+<p><strong>Contained Class: </strong><a href="classes/left_adjoint.html">Left Adjoint Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/preserves_colimits.html">Functor that Preserves Colimits</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-25" style="position:relative;">
+        
+        <h3><a href="relationships/right_adjoint_preserves_limits.html" class="table-title-link">A Right Adjoint Functor Preserves Limits</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Right Adjoint Functor Preserves Limits</p>
+<p><strong>Contained Class: </strong><a href="classes/right_adjoint.html">Right Adjoint Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/preserves_limits.html">Functor that Preserves Limits</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-26" style="position:relative;">
+        
+        <h3><a href="relationships/equivalence_adjoint.html" class="table-title-link">An Equivalence of Categories is Given by Adjoint Functors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Equivalence of Categories is Given by Adjoint Functors</p>
+<p><strong>Contained Class: </strong><a href="classes/equivalence.html">Equivalence of Categories</a></p>
+<p><strong>Container Class: </strong><a href="classes/right_adjoint.html">Right Adjoint Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-27" style="position:relative;">
+        
+        <h3><a href="relationships/equivalence_left_adjoint.html" class="table-title-link">An Equivalence of Categories is a Left Adjoint Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Equivalence of Categories is a Left Adjoint Functor</p>
+<p><strong>Contained Class: </strong><a href="classes/equivalence.html">Equivalence of Categories</a></p>
+<p><strong>Container Class: </strong><a href="classes/left_adjoint.html">Left Adjoint Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-28" style="position:relative;">
+        
+        <h3><a href="relationships/preserves_limits_functor.html" class="table-title-link">A Functor that Preserves Limits is a Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Functor that Preserves Limits is a Functor</p>
+<p><strong>Contained Class: </strong><a href="classes/preserves_limits.html">Functor that Preserves Limits</a></p>
+<p><strong>Container Class: </strong><a href="classes/functor.html">Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-29" style="position:relative;">
+        
+        <h3><a href="relationships/preserves_colimits_functor.html" class="table-title-link">A Functor that Preserves Colimits is a Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Functor that Preserves Colimits is a Functor</p>
+<p><strong>Contained Class: </strong><a href="classes/preserves_colimits.html">Functor that Preserves Colimits</a></p>
+<p><strong>Container Class: </strong><a href="classes/functor.html">Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-30" style="position:relative;">
+        
+        <h3><a href="relationships/injective_on_objects_functor.html" class="table-title-link">An Injective-on-objects Functor is a Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Injective-on-objects Functor is a Functor</p>
+<p><strong>Contained Class: </strong><a href="classes/injective-on-objects.html">Injective-on-objects Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/functor.html">Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-31" style="position:relative;">
+        
+        <h3><a href="relationships/surjective_on_objects_functor.html" class="table-title-link">A Surjective-on-objects Functor is a Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Surjective-on-objects Functor is a Functor</p>
+<p><strong>Contained Class: </strong><a href="classes/surjective-on-objects.html">Surjective-on-objects Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/functor.html">Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-32" style="position:relative;">
+        
+        <h3><a href="relationships/isomorphism_conservative.html" class="table-title-link">An Isomorphism of Categories is Conservative</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Isomorphism of Categories is Conservative</p>
+<p><strong>Contained Class: </strong><a href="classes/isomorphism.html">Isomorphism of Categories</a></p>
+<p><strong>Container Class: </strong><a href="classes/conservative.html">Conservative Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-33" style="position:relative;">
+        
+        <h3><a href="relationships/equivalence_conservative.html" class="table-title-link">An Equivalence of Categories is Conservative</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Equivalence of Categories is Conservative</p>
+<p><strong>Contained Class: </strong><a href="classes/equivalence.html">Equivalence of Categories</a></p>
+<p><strong>Container Class: </strong><a href="classes/conservative.html">Conservative Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-34" style="position:relative;">
+        
+        <h3><a href="relationships/fully_faithful_conservative.html" class="table-title-link">A Fully Faithful Functor is Conservative</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Fully Faithful Functor is Conservative</p>
+<p><strong>Contained Class: </strong><a href="classes/fully_faithful.html">Fully Faithful Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/conservative.html">Conservative Functor</a></p>
+<p><strong>Witness: </strong><a href="witnesses/conservative_not_fully_faithful.html">Conservative but not Fully Faithful Functor</a></p>
+<strong>Comments:</strong><div class="text-field"><p>Proof: Let $F: C \to D$ be fully faithful. Suppose $F(f): F(X) \to F(Y)$ is an isomorphism in $D$. Since $F$ is fully faithful, the map $Hom_C(X,Y) \to Hom_D(F(X),F(Y))$ is a bijection, so there exists $g: Y \to X \in C$ such that $F(g)$ is the inverse of $F(f)$. By functoriality, $F(fg) = F(f)F(g) = id_{F(Y)}$ and $F(gf) = F(g)F(f) = id_{F(X)}$. Since $F$ is faithful, $fg = id_Y$ and $gf = id_X$, so $f$ is an isomorphism in $C$. Thus, $F$ reflects isomorphisms, i.e., is conservative.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-37" style="position:relative;">
+        
+        <h3><a href="relationships/preserves_limits_left_exact.html" class="table-title-link">A Functor that Preserves Limits is Left Exact</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Functor that Preserves Limits is Left Exact</p>
+<p><strong>Contained Class: </strong><a href="classes/preserves_limits.html">Functor that Preserves Limits</a></p>
+<p><strong>Container Class: </strong><a href="classes/left_exact.html">Left Exact Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-38" style="position:relative;">
+        
+        <h3><a href="relationships/preserves_colimits_right_exact.html" class="table-title-link">A Functor that Preserves Colimits is Right Exact</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Functor that Preserves Colimits is Right Exact</p>
+<p><strong>Contained Class: </strong><a href="classes/preserves_colimits.html">Functor that Preserves Colimits</a></p>
+<p><strong>Container Class: </strong><a href="classes/right_exact.html">Right Exact Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-39" style="position:relative;">
+        
+        <h3><a href="relationships/left_exact_functor.html" class="table-title-link">A Left Exact Functor is a Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Left Exact Functor is a Functor</p>
+<p><strong>Contained Class: </strong><a href="classes/left_exact.html">Left Exact Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/functor.html">Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-40" style="position:relative;">
+        
+        <h3><a href="relationships/right_exact_functor.html" class="table-title-link">A Right Exact Functor is a Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Right Exact Functor is a Functor</p>
+<p><strong>Contained Class: </strong><a href="classes/right_exact.html">Right Exact Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/functor.html">Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-41" style="position:relative;">
+        
+        <h3><a href="relationships/pseudomonic_faithful.html" class="table-title-link">A Pseudomonic Functor is Faithful</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Pseudomonic Functor is Faithful</p>
+<p><strong>Contained Class: </strong><a href="classes/pseudomonic.html">Pseudomonic Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/faithful.html">Faithful Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-42" style="position:relative;">
+        
+        <h3><a href="relationships/split_essentially_surjective_essentially_surjective.html" class="table-title-link">A Split Essentially Surjective Functor is Essentially Surjective</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Split Essentially Surjective Functor is Essentially Surjective</p>
+<p><strong>Contained Class: </strong><a href="classes/split_essentially_surjective.html">Split Essentially Surjective Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/essentially-surjective.html">Essentially Surjective Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-43" style="position:relative;">
+        
+        <h3><a href="relationships/fully_faithful_pseudomonic.html" class="table-title-link">A Fully Faithful Functor is Pseudomonic</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Fully Faithful Functor is Pseudomonic</p>
+<p><strong>Contained Class: </strong><a href="classes/fully_faithful.html">Fully Faithful Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/pseudomonic.html">Pseudomonic Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-44" style="position:relative;">
+        
+        <h3><a href="relationships/pseudomonic_conservative.html" class="table-title-link">A Pseudomonic Functor is Conservative</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Pseudomonic Functor is Conservative</p>
+<p><strong>Contained Class: </strong><a href="classes/pseudomonic.html">Pseudomonic Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/conservative.html">Conservative Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-45" style="position:relative;">
+        
+        <h3><a href="relationships/pseudomonic_essentially_injective.html" class="table-title-link">A Pseudomonic Functor is Essentially Injective</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Pseudomonic Functor is Essentially Injective</p>
+<p><strong>Contained Class: </strong><a href="classes/pseudomonic.html">Pseudomonic Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/essentially-injective.html">Essentially Injective Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-46" style="position:relative;">
+        
+        <h3><a href="relationships/monadic_conservative.html" class="table-title-link">A Monadic Functor is Conservative</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Monadic Functor is Conservative</p>
+<p><strong>Contained Class: </strong><a href="classes/monadic.html">Monadic Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/conservative.html">Conservative Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-47" style="position:relative;">
+        
+        <h3><a href="relationships/conservative_functor.html" class="table-title-link">A Conservative Functor is a Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Conservative Functor is a Functor</p>
+<p><strong>Contained Class: </strong><a href="classes/conservative.html">Conservative Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/functor.html">Functor</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-35" style="position:relative;">
+        
+        <h3><a href="relationships/left_exact_preserves_limits.html" class="table-title-link">A Left Exact Functor Preserves Limits</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Left Exact Functor Preserves Limits</p>
+<p><strong>Contained Class: </strong><a href="classes/left_exact.html">Left Exact Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/preserves_limits.html">Functor that Preserves Limits</a></p>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-36" style="position:relative;">
+        
+        <h3><a href="relationships/right_exact_preserves_colimits.html" class="table-title-link">A Right Exact Functor Preserves Colimits</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Right Exact Functor Preserves Colimits</p>
+<p><strong>Contained Class: </strong><a href="classes/right_exact.html">Right Exact Functor</a></p>
+<p><strong>Container Class: </strong><a href="classes/preserves_colimits.html">Functor that Preserves Colimits</a></p>
+
+
+
+        </div>
+    </div>
+    
+            </div>
+    
+        </main>
+        <footer>
+            <p>Generated with Python • Hosted on GitHub Pages</p>
+        </footer>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const equations = document.querySelectorAll('.latex-equation');
+                equations.forEach(eq => {
+                    const latex = eq.getAttribute('data-latex');
+                    eq.innerHTML = '$$' + latex + '$$';
+                });
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
+            });
+        </script>
+    </body>
+    </html>
+    

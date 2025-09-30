@@ -1,0 +1,8 @@
+{
+  "id": 32,
+  "name": "An Isomorphism of Categories is Conservative",
+  "short_name": "isomorphism_conservative",
+  "containee": "#isomorphism",
+  "container": "#conservative",
+  "witness": ""
+}

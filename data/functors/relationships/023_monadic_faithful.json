@@ -1,0 +1,8 @@
+{
+  "id": 23,
+  "name": "A Monadic Functor is Faithful",
+  "short_name": "monadic_faithful",
+  "containee": "#monadic",
+  "container": "#faithful",
+  "witness": ""
+}

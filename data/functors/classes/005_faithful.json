@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "name": "Faithful Functor",
+  "short_name": "faithful",
+  "symbol": "",
+  "definition": "A **Functor** $F:C\\to D$ is called **faithful** when the induced function on Hom sets\n$$\nF_{X,Y}: Hom_C(X,Y)\\to Hom_D(X,Y)\n$$\nis **injective**.",
+  "description": "",
+  "comments": ""
+}

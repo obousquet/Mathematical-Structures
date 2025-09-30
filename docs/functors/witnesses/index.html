@@ -1,0 +1,176 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Mathematical-Structures/functors/">
+        <title>Objects or sub-classes that demonstrate the strictness of containment relationships between classes. - Functors</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+    
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                }
+            };</script>
+    </head>
+    <body>
+        <header>
+            <h1>Objects or sub-classes that demonstrate the strictness of containment relationships between classes. - Functors</h1>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Mathematical-Structures/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
+        </div>
+    
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="classes/index.html">Classes</a></li><li><a href="relationships/index.html">Relationships</a></li><li><a href="witnesses/index.html">Witnesses</a></li></ul>
+        </div>
+    
+            </nav>
+        </header>
+        <main class="table-container">
+            
+            <div class="table-description">
+                <p>Objects or sub-classes that demonstrate the strictness of containment relationships between classes.</p>
+            </div>
+            <div class="table-grid">
+                
+    <div class="table-card" id="math-1" style="position:relative;">
+        
+        <h3><a href="witnesses/map_not_st_map.html" class="table-title-link">A Map of Categories which does not preserve sources and targets</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Map of Categories which does not preserve sources and targets</p>
+
+<strong>Definition:</strong><div class="text-field"><p>Consider the map from the category with two objects ${0,1}$ to itself that maps $id_0$ to $id_1$. It does not preserve source and targets.</p></div>
+
+<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/st_map_map.html'>A ST Map is a Map</a></li></ul></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-2" style="position:relative;">
+        
+        <h3><a href="witnesses/faithful_not_full.html" class="table-title-link">A Faithful but not Full Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Faithful but not Full Functor</p>
+
+<strong>Definition:</strong><div class="text-field"><p>The inclusion functor $i: \mathbf{InjSet} \to \mathbf{Set}$ from the category of sets with injective maps to the category of sets is faithful but not full, since not every function between sets is injective.</p></div>
+
+<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/full_functor_functor.html'>A Full Functor is a Functor</a></li></ul></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-3" style="position:relative;">
+        
+        <h3><a href="witnesses/full_not_faithful.html" class="table-title-link">A Full but not Faithful Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Full but not Faithful Functor</p>
+
+<strong>Definition:</strong><div class="text-field"><p>Consider the functor from a category with one object and one morphism to a category with two objects and two parallel morphisms between them. This functor is full but not faithful.</p></div>
+
+<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/fully_faithful_faithful.html'>A Fully Faithful Functor is Faithful</a></li></ul></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-4" style="position:relative;">
+        
+        <h3><a href="witnesses/essentially_surjective_not_surjective_on_objects.html" class="table-title-link">Essentially Surjective but not Surjective-on-objects Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Essentially Surjective but not Surjective-on-objects Functor</p>
+
+<strong>Definition:</strong><div class="text-field"><p>The inclusion functor from the category of finite-dimensional vector spaces over a field to the category of all vector spaces is essentially surjective but not surjective-on-objects.</p></div>
+
+<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/essentially_surjective_surjective_on_objects.html'>An Essentially Surjective Functor is Surjective-on-objects</a></li></ul></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-5" style="position:relative;">
+        
+        <h3><a href="witnesses/injective_not_fully_faithful.html" class="table-title-link">Injective-on-objects but not Fully Faithful Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Injective-on-objects but not Fully Faithful Functor</p>
+
+<strong>Definition:</strong><div class="text-field"><p>The forgetful functor from the category of groups to the category of sets is injective-on-objects but not fully faithful.</p></div>
+
+<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/embedding_injective_on_objects.html'>An Embedding Functor is Injective-on-objects</a></li></ul></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-6" style="position:relative;">
+        
+        <h3><a href="witnesses/conservative_not_fully_faithful.html" class="table-title-link">Conservative but not Fully Faithful Functor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Conservative but not Fully Faithful Functor</p>
+
+<strong>Definition:</strong><div class="text-field"><p>The inclusion functor from the category of abelian groups to the category of groups is conservative but not fully faithful.</p></div>
+
+<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/fully_faithful_conservative.html'>A Fully Faithful Functor is Conservative</a></li></ul></p>
+
+        </div>
+    </div>
+    
+            </div>
+    
+        </main>
+        <footer>
+            <p>Generated with Python • Hosted on GitHub Pages</p>
+        </footer>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const equations = document.querySelectorAll('.latex-equation');
+                equations.forEach(eq => {
+                    const latex = eq.getAttribute('data-latex');
+                    eq.innerHTML = '$$' + latex + '$$';
+                });
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
+            });
+        </script>
+    </body>
+    </html>
+    

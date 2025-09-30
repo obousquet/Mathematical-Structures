@@ -1,0 +1,8 @@
+{
+  "id": 41,
+  "name": "A Pseudomonic Functor is Faithful",
+  "short_name": "pseudomonic_faithful",
+  "containee": "#pseudomonic",
+  "container": "#faithful",
+  "witness": ""
+}

@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "name": "Equivalence of Categories",
+  "short_name": "equivalence",
+  "symbol": "",
+  "definition": "A **Functor** $F:C\\to D$ is an **equivalence of categories** if it is fully faithful and essentially surjective.",
+  "description": "A #functor is an equivalence when it is fully faithful and essentially surjective.",
+  "comments": ""
+}

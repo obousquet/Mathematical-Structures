@@ -1,0 +1,8 @@
+{
+  "id": 29,
+  "name": "A Functor that Preserves Colimits is a Functor",
+  "short_name": "preserves_colimits_functor",
+  "containee": "#preserves_colimits",
+  "container": "#functor",
+  "witness": ""
+}

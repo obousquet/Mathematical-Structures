@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "name": "Essentially Surjective Functor",
+  "short_name": "essentially-surjective",
+  "symbol": "",
+  "definition": "A **Functor** $F:C\\to D$ is called **essentially surjective** if for every object $Y$ in $D$, there exists an object $X$ in $C$ such that $F(X)$ is isomorphic to $Y$ in $D$.",
+  "description": "A #functor is essentially surjective when every object of $D$ is isomorphic to the image of some object of $C$.",
+  "comments": ""
+}

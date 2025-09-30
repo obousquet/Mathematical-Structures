@@ -1,0 +1,8 @@
+{
+  "id": 47,
+  "name": "A Conservative Functor is a Functor",
+  "short_name": "conservative_functor",
+  "containee": "#conservative",
+  "container": "#functor",
+  "witness": ""
+}

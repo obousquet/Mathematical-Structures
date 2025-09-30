@@ -1,0 +1,8 @@
+{
+  "id": 9,
+  "name": "An Equivalence Functor is Fully Faithful",
+  "short_name": "equivalence_fully_faithful",
+  "containee": "#equivalence",
+  "container": "#fully_faithful",
+  "witness": ""
+}

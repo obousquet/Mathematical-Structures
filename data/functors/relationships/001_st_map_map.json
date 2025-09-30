@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "name": "A ST Map is a Map",
+  "short_name": "st_map_map",
+  "containee": "#st_map",
+  "container": "#map",
+  "witness": "#map_not_st_map"
+}

@@ -1,0 +1,8 @@
+{
+  "id": 28,
+  "name": "A Functor that Preserves Limits is a Functor",
+  "short_name": "preserves_limits_functor",
+  "containee": "#preserves_limits",
+  "container": "#functor",
+  "witness": ""
+}

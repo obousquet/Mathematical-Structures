@@ -1,0 +1,22 @@
+{
+  "title": "Functors",
+  "header": "Properties of Functors",
+  "subtitle": "Part of the Mathematical Structures Database",
+  "description": "Welcome to the Functors section of the Mathematical Structures Database!",
+  "footer": "Generated with Python • Hosted on GitHub Pages",
+  "homepage": "https://github.com/obousquet/Mathematical-Structures/",
+  "deploy_url": "https://obousquet.github.io/Mathematical-Structures/functors",
+  "graphs": [
+    {
+      "name": "Hasse Diagram",
+      "short_name": "hasse",
+      "description": "Relationships between classes",
+      "module": "functors/make_graph.py",
+      "function": "generate"
+    }
+  ],
+  "bibliography": {
+    "title": "Bibliography",
+    "bibfile": "bibliography.bib"
+  }
+}

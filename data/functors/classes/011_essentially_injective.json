@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "name": "Essentially Injective Functor",
+  "short_name": "essentially-injective",
+  "symbol": "",
+  "definition": "A **Functor** $F:C\\to D$ is called **essentially injective** if $F(X)\\cong F(Y)$ implies $X\\cong Y$ for objects $X, Y$ in $C$.",
+  "description": "A #functor is essentially injective when isomorphic images imply isomorphic preimages.",
+  "comments": ""
+}

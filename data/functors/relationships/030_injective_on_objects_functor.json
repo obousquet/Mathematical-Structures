@@ -1,0 +1,8 @@
+{
+  "id": 30,
+  "name": "An Injective-on-objects Functor is a Functor",
+  "short_name": "injective_on_objects_functor",
+  "containee": "#injective-on-objects",
+  "container": "#functor",
+  "witness": ""
+}

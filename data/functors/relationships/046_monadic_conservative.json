@@ -1,0 +1,8 @@
+{
+  "id": 46,
+  "name": "A Monadic Functor is Conservative",
+  "short_name": "monadic_conservative",
+  "containee": "#monadic",
+  "container": "#conservative",
+  "witness": ""
+}

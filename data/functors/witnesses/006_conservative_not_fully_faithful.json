@@ -1,0 +1,8 @@
+{
+  "id": 6,
+  "name": "Conservative but not Fully Faithful Functor",
+  "short_name": "conservative_not_fully_faithful",
+  "symbol": "",
+  "definition": "The inclusion functor from the category of abelian groups to the category of groups is conservative but not fully faithful.",
+  "comments": ""
+}

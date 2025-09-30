@@ -1,0 +1,8 @@
+{
+  "id": 19,
+  "name": "A Left Adjoint Functor is a Functor",
+  "short_name": "left_adjoint_functor",
+  "containee": "#left_adjoint",
+  "container": "#functor",
+  "witness": ""
+}

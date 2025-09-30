@@ -1,0 +1,8 @@
+{
+  "id": 31,
+  "name": "A Surjective-on-objects Functor is a Functor",
+  "short_name": "surjective_on_objects_functor",
+  "containee": "#surjective-on-objects",
+  "container": "#functor",
+  "witness": ""
+}

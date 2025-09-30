@@ -1,0 +1,8 @@
+{
+  "id": 45,
+  "name": "A Pseudomonic Functor is Essentially Injective",
+  "short_name": "pseudomonic_essentially_injective",
+  "containee": "#pseudomonic",
+  "container": "#essentially-injective",
+  "witness": ""
+}

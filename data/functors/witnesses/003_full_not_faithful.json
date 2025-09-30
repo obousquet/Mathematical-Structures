@@ -1,0 +1,8 @@
+{
+  "id": 3,
+  "name": "A Full but not Faithful Functor",
+  "short_name": "full_not_faithful",
+  "symbol": "",
+  "definition": "Consider the functor from a category with one object and one morphism to a category with two objects and two parallel morphisms between them. This functor is full but not faithful.",
+  "comments": ""
+}

@@ -1,0 +1,9 @@
+{
+  "id": 24,
+  "name": "Split Essentially Surjective Functor",
+  "short_name": "split_essentially_surjective",
+  "symbol": "",
+  "definition": "A **Functor** $F:C\\to D$ is **split essentially surjective** if for every object $Y$ in $D$, there exists an object $X$ in $C$ and an isomorphism $F(X) \\cong Y$ in $D$ such that the isomorphism is split (i.e., there is a chosen inverse).",
+  "description": "A #functor is split essentially surjective if every object in $D$ is isomorphic to the image of some object in $C$ with a chosen inverse.",
+  "comments": ""
+}

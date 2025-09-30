@@ -1,0 +1,8 @@
+{
+  "id": 8,
+  "name": "An Embedding Functor is Injective-on-objects",
+  "short_name": "embedding_injective_on_objects",
+  "containee": "#embedding",
+  "container": "#injective-on-objects",
+  "witness": "#injective_not_fully_faithful"
+}

@@ -1,0 +1,8 @@
+{
+  "id": 7,
+  "name": "An Embedding Functor is Fully Faithful",
+  "short_name": "embedding_fully_faithful",
+  "containee": "#embedding",
+  "container": "#fully_faithful",
+  "witness": ""
+}

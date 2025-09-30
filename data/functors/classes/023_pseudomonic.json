@@ -1,0 +1,9 @@
+{
+  "id": 23,
+  "name": "Pseudomonic Functor",
+  "short_name": "pseudomonic",
+  "symbol": "",
+  "definition": "A **Functor** $F:C\\to D$ is **pseudomonic** if it is faithful (injective on hom-sets) and full on isomorphisms: for any objects $x, y$ in $C$, the map $F: \\mathrm{Iso}_C(x, y) \\to \\mathrm{Iso}_D(Fx, Fy)$ is bijective.",
+  "description": "A #functor is pseudomonic if it is faithful and full on isomorphisms.",
+  "comments": ""
+}

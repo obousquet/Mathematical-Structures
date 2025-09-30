@@ -1,0 +1,8 @@
+{
+  "id": 21,
+  "name": "A Monadic Functor is a Right Adjoint",
+  "short_name": "monadic_right_adjoint",
+  "containee": "#monadic",
+  "container": "#right_adjoint",
+  "witness": ""
+}

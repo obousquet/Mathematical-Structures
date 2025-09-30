@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "name": "Surjective-on-objects Functor",
+  "short_name": "surjective-on-objects",
+  "symbol": "",
+  "definition": "A **Functor** $F:C\\to D$ is called **surjective-on-objects** if the function $F:Ob(C)\\to Ob(D)$ is surjective.",
+  "description": "A #functor is surjective-on-objects when every object of $D$ is in the image of $F$.",
+  "comments": ""
+}

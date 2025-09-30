@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "name": "A Map of Categories which does not preserve sources and targets",
+  "short_name": "map_not_st_map",
+  "symbol": "",
+  "definition": "Consider the map from the category with two objects $\\{0,1\\}$ to itself that maps $id_0$ to $id_1$. It does not preserve source and targets.",
+  "comments": ""
+}

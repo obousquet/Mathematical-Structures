@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "name": "Map of Categories",
+  "short_name": "map",
+  "symbol": "",
+  "definition": "A map between categories $C$ and $D$ is a pair $(o,m)$ of two maps, $o$ mapping objects of $C$ to objects of $D$ and $m$ mapping the morphisms of $C$ to morphisms of $D$.",
+  "description": "This is not very interesting if we don't impose any constraints. But it is the base of our hierarchy of concepts.",
+  "comments": ""
+}

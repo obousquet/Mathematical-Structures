@@ -1,0 +1,9 @@
+{
+  "id": 16,
+  "name": "Monadic Functor",
+  "short_name": "monadic",
+  "symbol": "",
+  "definition": "A **Functor** $F:C\\to D$ is **monadic** if it is equivalent to the forgetful functor from the category of algebras for a monad on $D$ to $D$.",
+  "description": "A #functor is monadic if it arises as the forgetful functor from the category of algebras for a monad.",
+  "comments": ""
+}

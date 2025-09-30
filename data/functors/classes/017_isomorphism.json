@@ -1,0 +1,9 @@
+{
+  "id": 17,
+  "name": "Isomorphism of Categories",
+  "short_name": "isomorphism",
+  "symbol": "",
+  "definition": "A **Functor** $F:C\\to D$ is an **isomorphism of categories** if there exists a functor $G:D\\to C$ such that $F \\circ G = id_D$ and $G \\circ F = id_C$.",
+  "description": "A #functor is an isomorphism if it has an inverse functor and both compositions are the identity.",
+  "comments": ""
+}

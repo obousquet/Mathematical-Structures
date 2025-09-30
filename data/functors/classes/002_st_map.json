@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "name": "Source and Target Preserving Map",
+  "short_name": "st_map",
+  "symbol": "",
+  "definition": "A **source and target preserving map** between categories is a #map $(o,m)$ such that the source and targets of the morphisms are preserved:\n$$\nf:A\\to B \\implies  m(f):m(A)\\to m(B)\n$$",
+  "description": "",
+  "comments": ""
+}

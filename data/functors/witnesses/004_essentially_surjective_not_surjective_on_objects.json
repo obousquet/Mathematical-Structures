@@ -1,0 +1,8 @@
+{
+  "id": 4,
+  "name": "Essentially Surjective but not Surjective-on-objects Functor",
+  "short_name": "essentially_surjective_not_surjective_on_objects",
+  "symbol": "",
+  "definition": "The inclusion functor from the category of finite-dimensional vector spaces over a field to the category of all vector spaces is essentially surjective but not surjective-on-objects.",
+  "comments": ""
+}

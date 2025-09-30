@@ -1,0 +1,8 @@
+{
+  "id": 42,
+  "name": "A Split Essentially Surjective Functor is Essentially Surjective",
+  "short_name": "split_essentially_surjective_essentially_surjective",
+  "containee": "#split_essentially_surjective",
+  "container": "#essentially-surjective",
+  "witness": ""
+}

@@ -43,4 +43,33 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
             "label": label,
             **arrow
         })
-    return {"nodes": nodes, "edges": edges}
+
+    # Remove transitive edges for Hasse diagram
+    # Build adjacency list
+    adj = {}
+    for e in edges:
+        adj.setdefault(e["source"], set()).add(e["target"])
+
+    def reachable(src, dst, exclude=None):
+        # DFS to check if dst is reachable from src, excluding direct edge src->dst
+        stack = [src]
+        visited = set()
+        while stack:
+            node = stack.pop()
+            if node == dst:
+                return True
+            visited.add(node)
+            for neighbor in adj.get(node, []):
+                if exclude and node == src and neighbor == dst:
+                    continue
+                if neighbor not in visited:
+                    stack.append(neighbor)
+        return False
+
+    hasse_edges = []
+    for e in edges:
+        # If there is an alternate path from source to target, exclude this edge
+        if not reachable(e["source"], e["target"], exclude=True):
+            hasse_edges.append(e)
+
+    return {"nodes": nodes, "edges": hasse_edges}

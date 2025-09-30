@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "name": "Functor",
+  "short_name": "functor",
+  "symbol": "",
+  "definition": "A **Functor** $F$ between categories $C$ and $D$ is a #map such that\n\n- $F$ associated $f:A\\to B$ with $F(f):F(A)\\to F(B)$ (it is a #st_map)\n- $F(g\\circ f)=F(g)\\circ F(f)$ (it preserves composition)\n- $F(id_{A}) = \\text{id}_{F(A)}$ (it preserves identity morphisms)\n",
+  "description": "",
+  "comments": ""
+}

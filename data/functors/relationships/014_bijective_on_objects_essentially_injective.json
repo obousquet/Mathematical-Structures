@@ -1,0 +1,8 @@
+{
+  "id": 14,
+  "name": "A Bijective-on-objects Functor is Essentially Injective",
+  "short_name": "bijective_on_objects_essentially_injective",
+  "containee": "#bijective-on-objects",
+  "container": "#essentially-injective",
+  "witness": ""
+}

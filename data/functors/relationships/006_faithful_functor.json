@@ -1,0 +1,8 @@
+{
+  "id": 6,
+  "name": "A Faithful Functor is a Functor",
+  "short_name": "faithful_functor",
+  "containee": "#faithful",
+  "container": "#functor",
+  "witness": ""
+}

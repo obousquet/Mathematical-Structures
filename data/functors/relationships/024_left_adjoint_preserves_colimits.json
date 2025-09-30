@@ -1,0 +1,8 @@
+{
+  "id": 24,
+  "name": "A Left Adjoint Functor Preserves Colimits",
+  "short_name": "left_adjoint_preserves_colimits",
+  "containee": "#left_adjoint",
+  "container": "#preserves_colimits",
+  "witness": ""
+}

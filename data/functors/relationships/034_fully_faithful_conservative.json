@@ -1,0 +1,9 @@
+{
+  "id": 34,
+  "name": "A Fully Faithful Functor is Conservative",
+  "short_name": "fully_faithful_conservative",
+  "containee": "#fully_faithful",
+  "container": "#conservative",
+  "witness": "#conservative_not_fully_faithful",
+  "comments": "Proof: Let $F: C \\to D$ be fully faithful. Suppose $F(f): F(X) \\to F(Y)$ is an isomorphism in $D$. Since $F$ is fully faithful, the map $Hom_C(X,Y) \\to Hom_D(F(X),F(Y))$ is a bijection, so there exists $g: Y \\to X \\in C$ such that $F(g)$ is the inverse of $F(f)$. By functoriality, $F(fg) = F(f)F(g) = id_{F(Y)}$ and $F(gf) = F(g)F(f) = id_{F(X)}$. Since $F$ is faithful, $fg = id_Y$ and $gf = id_X$, so $f$ is an isomorphism in $C$. Thus, $F$ reflects isomorphisms, i.e., is conservative."
+}

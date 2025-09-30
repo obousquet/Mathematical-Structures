@@ -1,0 +1,8 @@
+{
+  "id": 25,
+  "name": "A Right Adjoint Functor Preserves Limits",
+  "short_name": "right_adjoint_preserves_limits",
+  "containee": "#right_adjoint",
+  "container": "#preserves_limits",
+  "witness": ""
+}

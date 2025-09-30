@@ -1,0 +1,8 @@
+{
+  "id": 16,
+  "name": "An Essentially Surjective Functor is Surjective-on-objects",
+  "short_name": "essentially_surjective_surjective_on_objects",
+  "containee": "#essentially-surjective",
+  "container": "#surjective-on-objects",
+  "witness": "#essentially_surjective_not_surjective_on_objects"
+}

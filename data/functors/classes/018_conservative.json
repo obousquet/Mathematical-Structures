@@ -1,0 +1,9 @@
+{
+  "id": 18,
+  "name": "Conservative Functor",
+  "short_name": "conservative",
+  "symbol": "",
+  "definition": "A **Functor** $F:C\\to D$ is **conservative** if it reflects isomorphisms: whenever $F(f)$ is an isomorphism, $f$ is an isomorphism.",
+  "description": "A #functor is conservative if it reflects isomorphisms.",
+  "comments": ""
+}

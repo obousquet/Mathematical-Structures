@@ -1,0 +1,8 @@
+{
+  "id": 5,
+  "name": "Injective-on-objects but not Fully Faithful Functor",
+  "short_name": "injective_not_fully_faithful",
+  "symbol": "",
+  "definition": "The forgetful functor from the category of groups to the category of sets is injective-on-objects but not fully faithful.",
+  "comments": ""
+}

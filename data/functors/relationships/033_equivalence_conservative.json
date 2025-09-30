@@ -1,0 +1,8 @@
+{
+  "id": 33,
+  "name": "An Equivalence of Categories is Conservative",
+  "short_name": "equivalence_conservative",
+  "containee": "#equivalence",
+  "container": "#conservative",
+  "witness": ""
+}

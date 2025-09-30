@@ -1,0 +1,9 @@
+{
+  "id": 22,
+  "name": "Right Exact Functor",
+  "short_name": "right_exact",
+  "symbol": "",
+  "definition": "A **Functor** $F:C\\to D$ is **right exact** if it preserves all finite colimits.",
+  "description": "A #functor is right exact if it preserves finite colimits.",
+  "comments": ""
+}

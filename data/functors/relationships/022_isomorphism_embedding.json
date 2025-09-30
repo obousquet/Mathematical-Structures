@@ -1,0 +1,8 @@
+{
+  "id": 22,
+  "name": "An Isomorphism of Categories is an Embedding",
+  "short_name": "isomorphism_embedding",
+  "containee": "#isomorphism",
+  "container": "#embedding",
+  "witness": ""
+}

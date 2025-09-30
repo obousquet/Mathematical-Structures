@@ -1,0 +1,8 @@
+{
+  "id": 2,
+  "name": "A Faithful but not Full Functor",
+  "short_name": "faithful_not_full",
+  "symbol": "",
+  "definition": "The inclusion functor $i: \\mathbf{InjSet} \\to \\mathbf{Set}$ from the category of sets with injective maps to the category of sets is faithful but not full, since not every function between sets is injective.",
+  "comments": ""
+}

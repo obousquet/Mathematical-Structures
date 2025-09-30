@@ -1,0 +1,8 @@
+{
+  "id": 26,
+  "name": "An Equivalence of Categories is Given by Adjoint Functors",
+  "short_name": "equivalence_adjoint",
+  "containee": "#equivalence",
+  "container": "#right_adjoint",
+  "witness": ""
+}

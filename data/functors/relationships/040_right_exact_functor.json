@@ -1,0 +1,8 @@
+{
+  "id": 40,
+  "name": "A Right Exact Functor is a Functor",
+  "short_name": "right_exact_functor",
+  "containee": "#right_exact",
+  "container": "#functor",
+  "witness": ""
+}

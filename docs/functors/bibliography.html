@@ -4,8 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mathematical Structures Template</title>
-        <link rel="stylesheet" href="template/styles.css">
+        <base href="https://obousquet.github.io/Mathematical-Structures/functors/">
+        <title>Bibliography</title>
+        <link rel="stylesheet" href="styles.css">
         
     <style>
     .nav-menu { display:inline-block; position:relative; margin-left:1em; }
@@ -35,33 +36,28 @@
     </head>
     <body>
         <header>
-            <h1>Mathematical Structures</h1>
-            <p>Organizing Mathematical Knowledge</p>
+            <h1>Bibliography</h1>
+            
             <nav>
                 <a href="index.html">Home</a>
-                <a href="https://github.com/obousquet/Mathematical-Structures/" target="_blank">About</a>   
+                <a href="https://github.com/obousquet/Mathematical-Structures/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
+        </div>
+    
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="classes/index.html">Classes</a></li><li><a href="relationships/index.html">Relationships</a></li><li><a href="witnesses/index.html">Witnesses</a></li></ul>
+        </div>
+    
             </nav>
         </header>
         <main class="table-container">
             
-    <div class="intro">
-        <p>Welcome to the Mathematical Structures Database!</p>
-    </div>
-    <div class="tables-grid">
-        
-        <div class="table-card">
-            <h3><a href="functors/index.html">Functors</a></h3>
-            <p>Properties of Functors in Category Theory</p>
-        </div>
-        <div class="table-card">
-            <h3><a href="rings/index.html">Rings</a></h3>
-            <p>Various classes between Fields and Rngs</p>
-        </div>
-        <div class="table-card">
-            <h3><a href="template/index.html">Template</a></h3>
-            <p>Demonstrates the functionality</p>
-        </div>
-                
+    <div class='bibliography-list'>
+    
     </div>
     
         </main>

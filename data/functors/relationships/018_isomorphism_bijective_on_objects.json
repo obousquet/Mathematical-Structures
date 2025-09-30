@@ -1,0 +1,8 @@
+{
+  "id": 18,
+  "name": "An Isomorphism of Categories is Bijective-on-objects",
+  "short_name": "isomorphism_bijective_on_objects",
+  "containee": "#isomorphism",
+  "container": "#bijective-on-objects",
+  "witness": ""
+}

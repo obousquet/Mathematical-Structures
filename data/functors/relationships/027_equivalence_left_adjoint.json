@@ -1,0 +1,8 @@
+{
+  "id": 27,
+  "name": "An Equivalence of Categories is a Left Adjoint Functor",
+  "short_name": "equivalence_left_adjoint",
+  "containee": "#equivalence",
+  "container": "#left_adjoint",
+  "witness": ""
+}

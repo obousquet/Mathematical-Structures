@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "name": "Embedding Functor",
+  "short_name": "embedding",
+  "symbol": "",
+  "definition": "A **Functor** $F:C \\to D$ is called an **embedding** if it is fully faithful and injective-on-objects.",
+  "description": "A #functor is an embedding when it is fully faithful and injective on objects.",
+  "comments": ""
+}

@@ -1,0 +1,8 @@
+{
+  "id": 4,
+  "name": "A Fully Faithful Functor is Faithful",
+  "short_name": "fully_faithful_faithful",
+  "containee": "#fully_faithful",
+  "container": "#faithful",
+  "witness": "#full_not_faithful"
+}
