@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Mathematical-Structures/rings/">
-        <title>Bibliography</title>
+        <title>Classes of mathematical structures - Classes of Rings</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -33,10 +33,18 @@
     </script>
     
         
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                }
+            };</script>
     </head>
     <body>
         <header>
-            <h1>Bibliography</h1>
+            <h1>Classes of mathematical structures - Classes of Rings</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -55,9 +63,25 @@
             </nav>
         </header>
         <main class="table-container">
-            
-    <div class='bibliography-list'>
-    
+            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
+    <div class="table-card" id="math-2" style="position:relative;">
+        
+        <h3><a href="classes/rings.html" class="table-title-link">Rings</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rings</p>
+
+<strong>Definition:</strong><div class="text-field"><p>A <strong>ring</strong> $R$ is a set equipped with two binary operations $(+, \cdot)$ such that</p>
+<ul>
+<li>$(R, +)$ is an abelian group (i.e. addition is associative, commutative, has a zero and inverses)</li>
+<li>$(R, \cdot)$ is a monoid (i.e. multiplication is associative and has a unit)</li>
+<li>Multiplication is distributive with respect to addition</li>
+</ul></div>
+<strong>Description:</strong><div class="text-field"><p>A ring is a set endowed with two binary operations, addition and multiplication. It is an abelian group for addition, a monoid for multiplication and multiplication distributes over addition.</p></div>
+
+<p><strong>Contained in:</strong> <em>None</em></p>
+<p><strong>Contains:</strong> <em>None</em></p>
+
+        </div>
     </div>
     
         </main>
@@ -65,6 +89,23 @@
             <p>Generated with Python • Hosted on GitHub Pages</p>
         </footer>
         
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const equations = document.querySelectorAll('.latex-equation');
+                equations.forEach(eq => {
+                    const latex = eq.getAttribute('data-latex');
+                    eq.innerHTML = '$$' + latex + '$$';
+                });
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
+            });
+        </script>
     </body>
     </html>
     

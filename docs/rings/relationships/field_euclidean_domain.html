@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Mathematical-Structures/rings/">
-        <title>Bibliography</title>
+        <title>Relationships between classes - Classes of Rings</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -33,10 +33,18 @@
     </script>
     
         
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                }
+            };</script>
     </head>
     <body>
         <header>
-            <h1>Bibliography</h1>
+            <h1>Relationships between classes - Classes of Rings</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -55,9 +63,17 @@
             </nav>
         </header>
         <main class="table-container">
-            
-    <div class='bibliography-list'>
-    
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-8" style="position:relative;">
+        
+        <h3><a href="relationships/field_euclidean_domain.html" class="table-title-link">A Field is an Euclidean Domain</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Field is an Euclidean Domain</p>
+<p><strong>Contained Class: </strong><a href="classes/field.html">Field</a></p>
+<p><strong>Container Class: </strong><a href="classes/euclidean_domain.html">Euclidean Domain</a></p>
+
+
+        </div>
     </div>
     
         </main>
@@ -65,6 +81,23 @@
             <p>Generated with Python • Hosted on GitHub Pages</p>
         </footer>
         
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const equations = document.querySelectorAll('.latex-equation');
+                equations.forEach(eq => {
+                    const latex = eq.getAttribute('data-latex');
+                    eq.innerHTML = '$$' + latex + '$$';
+                });
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
+            });
+        </script>
     </body>
     </html>
     

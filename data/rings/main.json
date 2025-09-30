@@ -11,7 +11,7 @@
       "name": "Classes of Rings",
       "short_name": "hasse",
       "description": "Relationships between classes of rings",
-      "module": "template/make_graph.py",
+      "module": "rings/make_graph.py",
       "function": "generate"
     }
   ],

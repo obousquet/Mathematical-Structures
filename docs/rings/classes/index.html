@@ -4,8 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <base href="https://obousquet.github.io/Mathematical-Structures/template/">
-        <title>Classes of mathematical structures - Mathematical Structures Template</title>
+        <base href="https://obousquet.github.io/Mathematical-Structures/rings/">
+        <title>Classes of mathematical structures - Classes of Rings</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Classes of mathematical structures - Mathematical Structures Template</h1>
+            <h1>Classes of mathematical structures - Classes of Rings</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -52,7 +52,7 @@
                 <a href="bibliography.html">Bibliography</a>
         <div class="nav-menu">
             <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
-            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Classes of Rings</a></li></ul>
         </div>
     
         <div class="nav-menu">
@@ -71,20 +71,80 @@
                 
     <div class="table-card" id="math-1" style="position:relative;">
         
-        <h3><a href="classes/integers.html" class="table-title-link">Integers</a></h3>
+        <h3><a href="classes/rng.html" class="table-title-link">Rng</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Integers</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathbb{Z}">
-            \mathbb{Z}
+        <p><strong>Name: </strong>Rng</p>
+
+<strong>Definition:</strong><div class="text-field"><p>A <strong>rng</strong> is a set $R$ with two binary operations $(+, \cdot)$ called addition and multiplication such that</p>
+<ul>
+<li>$(R, +)$ is an abelian group,</li>
+<li>$(R, \cdot)$ is a semigroup,</li>
+<li>Multiplication distributes over addition.</li>
+</ul></div>
+<strong>Description:</strong><div class="text-field"><p>A <a href="classes/ring.html">Ring</a> without unit (aka non-unital ring, or pseudo-ring).</p></div>
+
+<p><strong>Contained in:</strong> <em>None</em></p>
+<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/ring_rng.html'>A Ring is a Rng</a></li></ul></p>
+
         </div>
     </div>
     
+    <div class="table-card" id="math-2" style="position:relative;">
+        
+        <h3><a href="classes/rings.html" class="table-title-link">Rings</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rings</p>
 
+<strong>Definition:</strong><div class="text-field"><p>A <strong>ring</strong> $R$ is a set equipped with two binary operations $(+, \cdot)$ such that</p>
+<ul>
+<li>$(R, +)$ is an abelian group (i.e. addition is associative, commutative, has a zero and inverses)</li>
+<li>$(R, \cdot)$ is a monoid (i.e. multiplication is associative and has a unit)</li>
+<li>Multiplication is distributive with respect to addition</li>
+</ul></div>
+<strong>Description:</strong><div class="text-field"><p>A ring is a set endowed with two binary operations, addition and multiplication. It is an abelian group for addition, a monoid for multiplication and multiplication distributes over addition.</p></div>
 
+<p><strong>Contained in:</strong> <em>None</em></p>
+<p><strong>Contains:</strong> <em>None</em></p>
 
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/integers_rationals.html'>Integers are Rationals</a></li></ul></p>
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-3" style="position:relative;">
+        
+        <h3><a href="classes/commutative_rings.html" class="table-title-link">Commutative Rings</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Commutative Rings</p>
+
+<strong>Definition:</strong><div class="text-field"><p>A ring $R$ is called <strong>commutative</strong> when $(R, \cdot)$ is a commutative monoid.</p></div>
+<strong>Description:</strong><div class="text-field"><p>A commutative ring is a ring with a commutative multiplication.</p></div>
+
+<p><strong>Contained in:</strong> <em>None</em></p>
+<p><strong>Contains:</strong> <em>None</em></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-4" style="position:relative;">
+        
+        <h3><a href="classes/integral_domains.html" class="table-title-link">Integral Domains</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Integral Domains</p>
+
+<strong>Definition:</strong><div class="text-field"><p>An <strong>integral domain</strong> $R$ is a commutative ring where any non-zero element has the cancellation property:
+$$
+\forall a\in R, ab=ac\implies b=c
+$$</p></div>
+<strong>Description:</strong><div class="text-field"><p>Equivalent characterizations:</p>
+<ul>
+<li>An integral domain is a nonzero <a href="classes/commutative_ring.html">Commutative Ring</a> with no nonzero zero divisors.</li>
+<li>An integral domain is a <a href="classes/commutative_ring.html">Commutative Ring</a> in which the zero ideal ${0}$ is a prime ideal.</li>
+<li>An integral domain is a nonzero <a href="classes/commutative_ring.html">Commutative Ring</a> for which every nonzero element is cancellable under multiplication.</li>
+<li>An integral domain is a <a href="classes/ring.html">Ring</a> for which the set of nonzero elements is a commutative monoid under multiplication (because a monoid must be closed under multiplication).</li>
+<li>An integral domain is a nonzero <a href="classes/commutative_ring.html">Commutative Ring</a> in which for every nonzero element $r$, the function that maps each element $x$ of the ring to the product $xr$ is injective. Elements $r$ with this property are called regular, so it is equivalent to require that every nonzero element of the ring be regular.</li>
+<li>An integral domain is a <a href="classes/ring.html">Ring</a> that is isomorphic to a subring of a <a href="classes/field.html">Field</a>. (Given an integral domain, one can embed it in its field of fractions.)</li>
+</ul></div>
+
+<p><strong>Contained in:</strong> <em>None</em></p>
 <p><strong>Contains:</strong> <em>None</em></p>
 
         </div>
@@ -92,42 +152,210 @@
     
     <div class="table-card" id="math-2" style="position:relative;">
         
-        <h3><a href="classes/rationals.html" class="table-title-link">Rationals</a></h3>
+        <h3><a href="classes/ring.html" class="table-title-link">Ring</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Rationals</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathbb{Q}">
-            \mathbb{Q}
-        </div>
-    </div>
-    
+        <p><strong>Name: </strong>Ring</p>
 
+<strong>Definition:</strong><div class="text-field"><p>A <strong>ring</strong> $R$ is a set equipped with two binary operations $(+, \cdot)$ such that</p>
+<ul>
+<li>$(R, +)$ is an abelian group (i.e. addition is associative, commutative, has a zero and inverses)</li>
+<li>$(R, \cdot)$ is a monoid (i.e. multiplication is associative and has a unit)</li>
+<li>Multiplication is distributive with respect to addition</li>
+</ul></div>
+<strong>Description:</strong><div class="text-field"><p>A ring is a set endowed with two binary operations, addition and multiplication. It is an abelian group for addition, a monoid for multiplication and multiplication distributes over addition.</p></div>
 
-
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/rationals_reals.html'>Rationals are Reals</a></li></ul></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/integers_rationals.html'>Integers are Rationals</a></li></ul></p>
+<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/ring_rng.html'>A Ring is a Rng</a></li></ul></p>
+<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/commutative_ring_ring.html'>A Commutative Ring is a Ring</a></li><li><a href='relationships/noetherian_ring_ring.html'>A Noetherian Ring is a Ring</a></li><li><a href='relationships/division_ring_ring.html'>A Division Ring is a Ring</a></li></ul></p>
 
         </div>
     </div>
     
     <div class="table-card" id="math-3" style="position:relative;">
         
-        <h3><a href="classes/reals.html" class="table-title-link">Reals</a></h3>
+        <h3><a href="classes/commutative_ring.html" class="table-title-link">Commutative Ring</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Reals</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathbb{R}">
-            \mathbb{R}
+        <p><strong>Name: </strong>Commutative Ring</p>
+
+<strong>Definition:</strong><div class="text-field"><p>A ring $R$ is called <strong>commutative</strong> when $(R, \cdot)$ is a commutative monoid.</p></div>
+<strong>Description:</strong><div class="text-field"><p>A commutative ring is a <a href="classes/ring.html">Ring</a> with a commutative multiplication.</p></div>
+
+<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/commutative_ring_ring.html'>A Commutative Ring is a Ring</a></li></ul></p>
+<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/integral_domain_commutative_ring.html'>An Integral Domain is a Commutative Ring</a></li></ul></p>
+
         </div>
     </div>
     
+    <div class="table-card" id="math-4" style="position:relative;">
+        
+        <h3><a href="classes/integral_domain.html" class="table-title-link">Integral Domain</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Integral Domain</p>
+
+<strong>Definition:</strong><div class="text-field"><p>An <strong>integral domain</strong> $R$ is a commutative ring where any non-zero element has the cancellation property:
+$$
+\forall a\in R, ab=ac\implies b=c
+$$</p></div>
+<strong>Description:</strong><div class="text-field"><p>Equivalent characterizations:</p>
+<ul>
+<li>An integral domain is a nonzero <a href="classes/commutative_ring.html">Commutative Ring</a> with no nonzero zero divisors.</li>
+<li>An integral domain is a <a href="classes/commutative_ring.html">Commutative Ring</a> in which the zero ideal ${0}$ is a prime ideal.</li>
+<li>An integral domain is a nonzero <a href="classes/commutative_ring.html">Commutative Ring</a> for which every nonzero element is cancellable under multiplication.</li>
+<li>An integral domain is a <a href="classes/ring.html">Ring</a> for which the set of nonzero elements is a commutative monoid under multiplication (because a monoid must be closed under multiplication).</li>
+<li>An integral domain is a nonzero <a href="classes/commutative_ring.html">Commutative Ring</a> in which for every nonzero element $r$, the function that maps each element $x$ of the ring to the product $xr$ is injective. Elements $r$ with this property are called regular, so it is equivalent to require that every nonzero element of the ring be regular.</li>
+<li>An integral domain is a <a href="classes/ring.html">Ring</a> that is isomorphic to a subring of a <a href="classes/field.html">Field</a>. (Given an integral domain, one can embed it in its field of fractions.)</li>
+</ul></div>
+
+<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/integral_domain_commutative_ring.html'>An Integral Domain is a Commutative Ring</a></li></ul></p>
+<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/integrally_closed_domain_integral_domain.html'>An Integrally Closed Domain is an Integral Domain</a></li></ul></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-5" style="position:relative;">
+        
+        <h3><a href="classes/integrally_closed_domain.html" class="table-title-link">Integrally Closed Domain</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Integrally Closed Domain</p>
+
+<strong>Definition:</strong><div class="text-field"><p>An <strong>integrally closed domain</strong> $R$ is an integral domain such that if $x$ is a root of a monic polynomial with coefficients in $R$, then $x\in R$.</p></div>
+<strong>Description:</strong><div class="text-field"><p>An <strong>integrally closed domain</strong> $R$ is an <a href="classes/integral_domain.html">Integral Domain</a> whose integral closure in its field of fractions is $R$ itself. This means that if $x$ is an element of the field of fractions of $R$, i.e. a root of a monic polynomial with coefficients in $R$, then $x$ is itself an element of $R$.</p></div>
+
+<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/integrally_closed_domain_integral_domain.html'>An Integrally Closed Domain is an Integral Domain</a></li></ul></p>
+<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/gcd_domain_integrally_closed_domain.html'>A GCD Domain is an Integrally Closed Domain</a></li></ul></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-6" style="position:relative;">
+        
+        <h3><a href="classes/gcd_domain.html" class="table-title-link">GCD Domain</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>GCD Domain</p>
+
+<strong>Definition:</strong><div class="text-field"><p>A <strong>GCD domain</strong> is an integral domain with the property that any two elements have a greatest common divisor.</p></div>
+<strong>Description:</strong><div class="text-field"><p>A <strong>GCD domain</strong> is an <a href="classes/integral_domain.html">Integral Domain</a> with any of the equivalent properties:</p>
+<ul>
+<li>Any two elements have a greatest common divisor</li>
+<li>There is a unique principal ideal containing the ideal generated by two elements</li>
+<li>Any two elements have a least common multiple</li>
+</ul></div>
+
+<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/gcd_domain_integrally_closed_domain.html'>A GCD Domain is an Integrally Closed Domain</a></li></ul></p>
+<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/unique_factorization_domain_gcd_domain.html'>A Unique Factorization Domain is a GCD Domain</a></li></ul></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-7" style="position:relative;">
+        
+        <h3><a href="classes/dedekind_domain.html" class="table-title-link">Dedekind Domain</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dedekind Domain</p>
+
+<strong>Definition:</strong><div class="text-field"><p>A <strong>Dedekind domain</strong> is an integral domain in which every nonzero proper ideal factors into a product of prime ideals.</p></div>
+<strong>Description:</strong><div class="text-field"><p>A <strong>Dedekind domain</strong> $R$ is either a <a href="classes/field.html">Field</a> or an <a href="classes/integral_domain.html">Integral Domain</a> satisfying any of the following equivalent conditions (these are equivalent for an <a href="classes/integral_domain.html">Integral Domain</a>):</p>
+<ol>
+<li>Every nonzero proper ideal factors into primes.</li>
+<li>$R$ is ?#noetherian and the localization at each maximal ideal is a ?#discrete_valuation_ring</li>
+<li>Every nonzero fractional ideal of $R$ is invertible</li>
+<li>$R$ is an <a href="classes/integrally_closed_domain.html">Integrally Closed Domain</a>, ?#noetherian with Krull dimension $1$.</li>
+<li>For any two ideals $I$ and $J$ in $R$, $I$ is contained in $J$ if and only if $J$ divides $I$ as ideals, i.e. there exists an ideal $H$ such that $I=JH$.</li>
+</ol></div>
+
+<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/dedekind_domain_noetherian_ring.html'>A Dedekind Domain is a Noetherian Ring</a></li></ul></p>
+<p><strong>Contains:</strong> <em>None</em></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-8" style="position:relative;">
+        
+        <h3><a href="classes/unique_factorization_domain.html" class="table-title-link">Unique Factorization Domain</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Unique Factorization Domain</p>
+
+<strong>Definition:</strong><div class="text-field"><p>A <strong>unique factorization domain</strong> (UFD) is a ring $R$ in which every non-zero element $x$ which is not a unit can be written as a finite product of irreducible elements
+$$ x= p_1p_2\ldots p_n$$ with $n\ge 1$ and this representation is unique in the sense that if $x=q_1\ldots q_m$ with $m\ge 1$ then $m=n$ and there exists a bijection between the $p_i$ and the $q_i$ such that the image $q_j$ of $p_i$ is associated with $p_i$.</p></div>
 
 
+<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/unique_factorization_domain_gcd_domain.html'>A Unique Factorization Domain is a GCD Domain</a></li></ul></p>
+<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/principal_ideal_domain_unique_factorization_domain.html'>A Principal Ideal Domain is a Unique Factorization Domain</a></li></ul></p>
 
-<p><strong>Contained in:</strong> <em>None</em></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/rationals_reals.html'>Rationals are Reals</a></li></ul></p>
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-9" style="position:relative;">
+        
+        <h3><a href="classes/principal_ideal_domain.html" class="table-title-link">Principal Ideal Domain</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Principal Ideal Domain</p>
+
+<strong>Definition:</strong><div class="text-field"><p>A <strong>principal ideal domain</strong> is an integral domain in which every ideal is principal.</p></div>
+<strong>Description:</strong><div class="text-field"><p>A <strong>principal ideal domain</strong> is an <a href="classes/integral_domain.html">Integral Domain</a> in which every ideal is principal.</p></div>
+
+<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/principal_ideal_domain_unique_factorization_domain.html'>A Principal Ideal Domain is a Unique Factorization Domain</a></li></ul></p>
+<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/euclidean_domain_principal_ideal_domain.html'>An Euclidean Domain is a Principal Ideal Domain</a></li></ul></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-10" style="position:relative;">
+        
+        <h3><a href="classes/euclidean_domain.html" class="table-title-link">Euclidean Domain</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Euclidean Domain</p>
+
+<strong>Definition:</strong><div class="text-field"><p>An <strong>Euclidean domain</strong> $R$ is an integral domain that can be endowed with a function $f:R \backslash \{ 0 \}\to \mathbb{N}$ such that for any $a,b\in R$ with $b\neq 0$, there exists $q,r\in R$ such that $$a=bq+r \mbox{ and } (r=0\mbox{ or } f(r)&lt;f(b))$$ </p></div>
+
+
+<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/euclidean_domain_principal_ideal_domain.html'>An Euclidean Domain is a Principal Ideal Domain</a></li></ul></p>
+<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/field_euclidean_domain.html'>A Field is an Euclidean Domain</a></li></ul></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-11" style="position:relative;">
+        
+        <h3><a href="classes/field.html" class="table-title-link">Field</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Field</p>
+
+<strong>Definition:</strong><div class="text-field"><p>A <strong>field</strong> is a commutative ring where every non-zero element has a multiplicative inverse.</p></div>
+<strong>Description:</strong><div class="text-field"><p>A <strong>field</strong> is a <a href="classes/commutative_ring.html">Commutative Ring</a> where every element nonzero element is a unit, its nonzero elements thus form a multiplicative abelian group.</p>
+<p>A commutative <a href="classes/division_ring.html">Division Ring</a> is thus the same thing as a <a href="classes/field.html">Field</a>.</p></div>
+
+<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/field_euclidean_domain.html'>A Field is an Euclidean Domain</a></li><li><a href='relationships/field_division_ring.html'>A Field is a Division Ring</a></li></ul></p>
+<p><strong>Contains:</strong> <em>None</em></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-12" style="position:relative;">
+        
+        <h3><a href="classes/division_ring.html" class="table-title-link">Division Ring</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Division Ring</p>
+
+<strong>Definition:</strong><div class="text-field"><p>A <strong>division</strong> is a nontrivial ring where every non-zero element has a multiplicative inverse.</p></div>
+
+<strong>Comments:</strong><div class="text-field"><p>Note that the multiplication may not be commutative. When it is commutative, this is a called a <a href="classes/field.html">Field</a>.</p></div>
+<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/division_ring_ring.html'>A Division Ring is a Ring</a></li></ul></p>
+<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/field_division_ring.html'>A Field is a Division Ring</a></li></ul></p>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-13" style="position:relative;">
+        
+        <h3><a href="classes/noetherian_ring.html" class="table-title-link">Noetherian Ring</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Noetherian Ring</p>
+
+<strong>Definition:</strong><div class="text-field"><p>A <strong>Noetherian ring</strong> is a ring satisfying the ascending chain condition for both left and right ideals.</p></div>
+
+
+<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/noetherian_ring_ring.html'>A Noetherian Ring is a Ring</a></li></ul></p>
+<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/dedekind_domain_noetherian_ring.html'>A Dedekind Domain is a Noetherian Ring</a></li></ul></p>
 
         </div>
     </div>
