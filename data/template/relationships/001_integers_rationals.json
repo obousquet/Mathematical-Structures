@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "name": "Integers are Rationals",
+  "short_name": "integers_rationals",
+  "containee": "#integers",
+  "container": "#rationals",
+  "witness": "#one_half"
+}

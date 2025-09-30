@@ -1,0 +1,83 @@
+{
+  "table_name": "classes",
+  "title": "Classes",
+  "description": "Classes of mathematical structures",
+  "columns": [
+    {
+        "name": "id",
+        "type": "integer",
+        "label": "ID",
+        "description": "Unique identifier for the class",
+        "required": true,
+        "rendered": false
+    },
+    {
+        "name": "name",
+        "type": "string",
+        "label": "Name",
+        "description": "Full name of the class",
+        "required": true,
+        "rendered": true
+    },
+    {
+        "name": "short_name",
+        "type": "string",
+        "label": "Short Name",
+        "description": "Short identifier for cross-referencing between tables",
+        "required": true,
+        "rendered": false
+    },
+    {
+        "name": "symbol",
+        "type": "latex",
+        "label": "Symbol",
+        "description": "Symbol representing the class (if any)",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "definition",
+        "type": "text",
+        "label": "Definition",
+        "description": "Formal definition of the class",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "description",
+        "type": "text",
+        "label": "Description",
+        "description": "Description of the class",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "comments",
+        "type": "text",
+        "label": "Comments",
+        "description": "Additional comments or notes about the class",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "contained_in",
+        "type": "reference",
+        "label": "Contained in",
+        "description": "Relationships in which this class appears (if any) as the contained class",
+        "required": false,
+        "rendered": true,
+        "table": "relationships",
+        "column": "containee"
+    },
+    {
+        "name": "contains",
+        "type": "reference",
+        "label": "Contains",
+        "description": "Relationships in which this class appears (if any) as the containing class",
+        "required": false,
+        "rendered": true,
+        "table": "relationships",
+        "column": "container"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Mathematical Structures Template",
+  "header": "Mathematical Structures Database",
+  "subtitle": "Organizing Mathematical Knowledge",
+  "description": "Welcome to the Mathematical Structures Database!",
+  "footer": "Generated with Python • Hosted on GitHub Pages",
+  "homepage": "https://github.com/obousquet/Mathematical-Structures/",
+  "deploy_url": "https://obousquet.github.io/Mathematical-Structures/template",
+  "graphs": [
+    {
+      "name": "Hasse Diagram",
+      "short_name": "hasse",
+      "description": "Relationships between classes",
+      "module": "template/make_graph.py",
+      "function": "generate"
+    }
+  ],
+  "bibliography": {
+    "title": "Bibliography",
+    "bibfile": "bibliography.bib"
+  }
+}

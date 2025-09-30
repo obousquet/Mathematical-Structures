@@ -1,0 +1,55 @@
+{
+  "table_name": "relationships",
+  "title": "Relationships",
+  "description": "Relationships between classes",
+  "columns": [
+    {
+        "name": "id",
+        "type": "integer",
+        "label": "ID",
+        "description": "Unique identifier for the relationship",
+        "required": true,
+        "rendered": false
+    },
+    {
+        "name": "name",
+        "type": "string",
+        "label": "Name",
+        "description": "Full name of the relationship",
+        "required": true,
+        "rendered": true
+    },
+    {
+        "name": "short_name",
+        "type": "string",
+        "label": "Short Name",
+        "description": "Short identifier for cross-referencing between tables",
+        "required": true,
+        "rendered": false
+    },
+    {
+        "name": "containee",
+        "type": "string",
+        "label": "Contained Class",
+        "description": "Unique identifier for the contained class",
+        "required": true,
+        "rendered": true
+    },
+    {
+        "name": "container",
+        "type": "string",
+        "label": "Container Class",
+        "description": "Unique identifier for the container class",
+        "required": true,
+        "rendered": true
+    },
+    {
+        "name": "witness",
+        "type": "string",
+        "label": "Witness",
+        "description": "Object or sub-class that demonstrates the strictness of the containment (if any)",
+        "required": false,
+        "rendered": true
+    }
+  ]
+}
