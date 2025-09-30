@@ -1,6 +1,8 @@
 # Mathematical-Structures
 A collection of databases of mathematical structures that can be organized into posets.
 
+Browse the database [here](https://obousquet.github.io/Mathematical-Structures/)
+
 1. **Clone the repositories**
 	- First, clone the main database editor repository:
 	  ```bash
@@ -26,7 +28,7 @@ A collection of databases of mathematical structures that can be organized into 
 
 4. **Edit the database locally**
 	- Open your browser and go to [http://localhost:8080](http://localhost:8080)
-	- You can now edit, add, or update entries in the database. All changes will be saved in the `data` directory of the `Combinatorial-Parameters` repository.
+	- You can now edit, add, or update entries in the database. All changes will be saved in the data directory you specified.
 
 5. **Generate the docs**
 	- Run this command:
