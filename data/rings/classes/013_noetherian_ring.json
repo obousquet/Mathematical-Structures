@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "name": "Noetherian Ring",
+  "short_name": "noetherian_ring",
+  "symbol": "",
+  "definition": "A **Noetherian ring** is a ring satisfying the ascending chain condition for both left and right ideals.",
+  "description": "",
+  "comments": ""
+}

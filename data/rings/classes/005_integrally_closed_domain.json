@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "name": "Integrally Closed Domain",
+  "short_name": "integrally_closed_domain",
+  "symbol": "",
+  "definition": "An **integrally closed domain** $R$ is an integral domain such that if $x$ is a root of a monic polynomial with coefficients in $R$, then $x\\in R$.",
+  "description": "An **integrally closed domain** $R$ is an #integral_domain whose integral closure in its field of fractions is $R$ itself. This means that if $x$ is an element of the field of fractions of $R$, i.e. a root of a monic polynomial with coefficients in $R$, then $x$ is itself an element of $R$.",
+  "comments": ""
+}

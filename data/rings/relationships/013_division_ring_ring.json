@@ -1,0 +1,8 @@
+{
+  "id": 13,
+  "name": "A Division Ring is a Ring",
+  "short_name": "division_ring_ring",
+  "containee": "#division_ring",
+  "container": "#ring",
+  "witness": ""
+}

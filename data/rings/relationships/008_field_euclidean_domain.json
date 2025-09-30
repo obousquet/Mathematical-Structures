@@ -1,0 +1,8 @@
+{
+  "id": 8,
+  "name": "A Field is an Euclidean Domain",
+  "short_name": "field_euclidean_domain",
+  "containee": "#field",
+  "container": "#euclidean_domain",
+  "witness": ""
+}

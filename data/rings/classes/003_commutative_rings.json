@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "name": "Commutative Rings",
+  "short_name": "commutative_rings",
+  "symbol": "",
+  "definition": "A ring $R$ is called **commutative** when $(R, \\cdot)$ is a commutative monoid.",
+  "description": "A commutative ring is a ring with a commutative multiplication.",
+  "comments": ""
+}

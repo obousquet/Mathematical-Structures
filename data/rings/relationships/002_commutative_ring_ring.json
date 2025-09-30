@@ -1,0 +1,8 @@
+{
+  "id": 2,
+  "name": "A Commutative Ring is a Ring",
+  "short_name": "commutative_ring_ring",
+  "containee": "#commutative_ring",
+  "container": "#ring",
+  "witness": ""
+}

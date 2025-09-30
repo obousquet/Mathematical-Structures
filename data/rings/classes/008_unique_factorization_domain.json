@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "name": "Unique Factorization Domain",
+  "short_name": "unique_factorization_domain",
+  "symbol": "",
+  "definition": "A **unique factorization domain** (UFD) is a ring $R$ in which every non-zero element $x$ which is not a unit can be written as a finite product of irreducible elements\n$$ x= p_1p_2\\ldots p_n$$ with $n\\ge 1$ and this representation is unique in the sense that if $x=q_1\\ldots q_m$ with $m\\ge 1$ then $m=n$ and there exists a bijection between the $p_i$ and the $q_i$ such that the image $q_j$ of $p_i$ is associated with $p_i$.",
+  "description": "",
+  "comments": ""
+}

@@ -1,0 +1,8 @@
+{
+  "id": 3,
+  "name": "An Integral Domain is a Commutative Ring",
+  "short_name": "integral_domain_commutative_ring",
+  "containee": "#integral_domain",
+  "container": "#commutative_ring",
+  "witness": ""
+}

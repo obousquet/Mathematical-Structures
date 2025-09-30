@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "name": "Division Ring",
+  "short_name": "division_ring",
+  "symbol": "",
+  "definition": "A **division** is a nontrivial ring where every non-zero element has a multiplicative inverse.",
+  "description": "",
+  "comments": "Note that the multiplication may not be commutative. When it is commutative, this is a called a #field."
+}

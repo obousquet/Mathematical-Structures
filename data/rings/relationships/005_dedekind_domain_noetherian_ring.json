@@ -1,0 +1,8 @@
+{
+  "id": 5,
+  "name": "A Dedekind Domain is a Noetherian Ring",
+  "short_name": "dedekind_domain_noetherian_ring",
+  "containee": "#dedekind_domain",
+  "container": "#noetherian_ring",
+  "witness": ""
+}

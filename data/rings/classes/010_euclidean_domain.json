@@ -1,0 +1,9 @@
+{
+  "id": 10,
+  "name": "Euclidean Domain",
+  "short_name": "euclidean_domain",
+  "symbol": "",
+  "definition": "An **Euclidean domain** $R$ is an integral domain that can be endowed with a function $f:R \\backslash \\\\{ 0 \\\\}\\to \\mathbb{N}$ such that for any $a,b\\in R$ with $b\\neq 0$, there exists $q,r\\in R$ such that $$a=bq+r \\mbox{ and } (r=0\\mbox{ or } f(r)<f(b))$$ ",
+  "description": "",
+  "comments": ""
+}

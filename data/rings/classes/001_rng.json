@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "name": "Rng",
+  "short_name": "rng",
+  "symbol": "",
+  "definition": "A **rng** is a set $R$ with two binary operations $(+, \\cdot)$ called addition and multiplication such that\n\n- $(R, +)$ is an abelian group,\n- $(R, \\cdot)$ is a semigroup,\n- Multiplication distributes over addition.\n",
+  "description": "A #ring without unit (aka non-unital ring, or pseudo-ring).",
+  "comments": ""
+}

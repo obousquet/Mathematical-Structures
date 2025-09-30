@@ -4,8 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Mathematical-Structures/template/">
         <title>Mathematical Structures Template</title>
-        <link rel="stylesheet" href="template/styles.css">
+        <link rel="stylesheet" href="styles.css">
         
     <style>
     .nav-menu { display:inline-block; position:relative; margin-left:1em; }
@@ -35,11 +36,22 @@
     </head>
     <body>
         <header>
-            <h1>Mathematical Structures</h1>
+            <h1>Mathematical Structures Template</h1>
             <p>Organizing Mathematical Knowledge</p>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="https://github.com/obousquet/Mathematical-Structures/" target="_blank">About</a>   
+                <a href="https://github.com/obousquet/Mathematical-Structures/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
+        </div>
+    
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="classes/index.html">Classes</a></li><li><a href="relationships/index.html">Relationships</a></li><li><a href="witnesses/index.html">Witnesses</a></li></ul>
+        </div>
+    
             </nav>
         </header>
         <main class="table-container">
@@ -50,14 +62,23 @@
     <div class="tables-grid">
         
         <div class="table-card">
-            <h3><a href="rings/index.html">Rings</a></h3>
-            <p>Various classes between Fields and Rngs</p>
+            <h3><a href="classes/index.html">Classes</a></h3>
+            <p>Classes of mathematical structures</p>
+            <p class="record-count">3 records</p>
         </div>
+        
         <div class="table-card">
-            <h3><a href="template/index.html">Template</a></h3>
-            <p>Demonstrates the functionality</p>
+            <h3><a href="relationships/index.html">Relationships</a></h3>
+            <p>Relationships between classes</p>
+            <p class="record-count">2 records</p>
         </div>
-                
+        
+        <div class="table-card">
+            <h3><a href="witnesses/index.html">Witnesses</a></h3>
+            <p>Objects or sub-classes that demonstrate the strictness of containment relationships between classes.</p>
+            <p class="record-count">2 records</p>
+        </div>
+        
     </div>
     
         </main>

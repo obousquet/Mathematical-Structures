@@ -1,0 +1,8 @@
+{
+  "id": 7,
+  "name": "A GCD Domain is an Integrally Closed Domain",
+  "short_name": "gcd_domain_integrally_closed_domain",
+  "containee": "#gcd_domain",
+  "container": "#integrally_closed_domain",
+  "witness": ""
+}

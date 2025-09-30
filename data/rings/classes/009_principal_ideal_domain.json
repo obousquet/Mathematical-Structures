@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "name": "Principal Ideal Domain",
+  "short_name": "principal_ideal_domain",
+  "symbol": "",
+  "definition": "A **principal ideal domain** is an integral domain in which every ideal is principal.",
+  "description": "A **principal ideal domain** is an #integral_domain in which every ideal is principal.",
+  "comments": ""
+}

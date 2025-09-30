@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "name": "Integral Domains",
+  "short_name": "integral_domains",
+  "symbol": "",
+  "definition": "An **integral domain** $R$ is a commutative ring where any non-zero element has the cancellation property:\n$$\n\\forall a\\in R, ab=ac\\implies b=c\n$$",
+  "description": "Equivalent characterizations:\n\n- An integral domain is a nonzero #commutative_ring with no nonzero zero divisors.\n- An integral domain is a #commutative_ring in which the zero ideal $\\{0\\}$ is a prime ideal.\n- An integral domain is a nonzero #commutative_ring for which every nonzero element is cancellable under multiplication.\n- An integral domain is a #ring for which the set of nonzero elements is a commutative monoid under multiplication (because a monoid must be closed under multiplication).\n- An integral domain is a nonzero #commutative_ring in which for every nonzero element $r$, the function that maps each element $x$ of the ring to the product $xr$ is injective. Elements $r$ with this property are called regular, so it is equivalent to require that every nonzero element of the ring be regular.\n- An integral domain is a #ring that is isomorphic to a subring of a #field. (Given an integral domain, one can embed it in its field of fractions.)",
+  "comments": ""
+}

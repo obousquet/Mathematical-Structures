@@ -1,0 +1,8 @@
+{
+  "id": 6,
+  "name": "An Integrally Closed Domain is an Integral Domain",
+  "short_name": "integrally_closed_domain_integral_domain",
+  "containee": "#integrally_closed_domain",
+  "container": "#integral_domain",
+  "witness": ""
+}

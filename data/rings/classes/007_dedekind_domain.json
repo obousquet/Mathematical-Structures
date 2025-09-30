@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "name": "Dedekind Domain",
+  "short_name": "dedekind_domain",
+  "symbol": "",
+  "definition": "A **Dedekind domain** is an integral domain in which every nonzero proper ideal factors into a product of prime ideals.",
+  "description": "A **Dedekind domain** $R$ is either a #field or an #integral_domain satisfying any of the following equivalent conditions (these are equivalent for an #integral_domain):\n\n1. Every nonzero proper ideal factors into primes.\n1. $R$ is #noetherian and the localization at each maximal ideal is a #discrete_valuation_ring\n1. Every nonzero fractional ideal of $R$ is invertible\n1. $R$ is an #integrally_closed_domain, #noetherian with Krull dimension $1$.\n1. For any two ideals $I$ and $J$ in $R$, $I$ is contained in $J$ if and only if $J$ divides $I$ as ideals, i.e. there exists an ideal $H$ such that $I=JH$.",
+  "comments": ""
+}

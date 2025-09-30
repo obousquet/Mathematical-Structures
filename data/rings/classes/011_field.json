@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "name": "Field",
+  "short_name": "field",
+  "symbol": "",
+  "definition": "A **field** is a commutative ring where every non-zero element has a multiplicative inverse.",
+  "description": "A **field** is a #commutative_ring where every element nonzero element is a unit, its nonzero elements thus form a multiplicative abelian group.\n\nA commutative #division_ring is thus the same thing as a #field.",
+  "comments": ""
+}

@@ -1,0 +1,8 @@
+{
+  "id": 11,
+  "name": "A Unique Factorization Domain is a GCD Domain",
+  "short_name": "unique_factorization_domain_gcd_domain",
+  "containee": "#unique_factorization_domain",
+  "container": "#gcd_domain",
+  "witness": ""
+}

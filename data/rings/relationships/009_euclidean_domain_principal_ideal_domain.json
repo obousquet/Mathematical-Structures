@@ -1,0 +1,8 @@
+{
+  "id": 9,
+  "name": "An Euclidean Domain is a Principal Ideal Domain",
+  "short_name": "euclidean_domain_principal_ideal_domain",
+  "containee": "#euclidean_domain",
+  "container": "#principal_ideal_domain",
+  "witness": ""
+}

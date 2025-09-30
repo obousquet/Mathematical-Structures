@@ -1,0 +1,8 @@
+{
+  "id": 4,
+  "name": "A Noetherian Ring is a Ring",
+  "short_name": "noetherian_ring_ring",
+  "containee": "#noetherian_ring",
+  "container": "#ring",
+  "witness": ""
+}

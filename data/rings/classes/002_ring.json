@@ -1,0 +1,9 @@
+{
+  "id": 2,
+  "name": "Ring",
+  "short_name": "ring",
+  "symbol": "",
+  "definition": "A **ring** $R$ is a set equipped with two binary operations $(+, \\cdot)$ such that\n\n- $(R, +)$ is an abelian group (i.e. addition is associative, commutative, has a zero and inverses)\n- $(R, \\cdot)$ is a monoid (i.e. multiplication is associative and has a unit)\n- Multiplication is distributive with respect to addition\n",
+  "description": "A ring is a set endowed with two binary operations, addition and multiplication. It is an abelian group for addition, a monoid for multiplication and multiplication distributes over addition.",
+  "comments": ""
+}

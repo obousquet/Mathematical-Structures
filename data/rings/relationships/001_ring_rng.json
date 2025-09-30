@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "name": "A Ring is a Rng",
+  "short_name": "ring_rng",
+  "containee": "#ring",
+  "container": "#rng",
+  "witness": ""
+}

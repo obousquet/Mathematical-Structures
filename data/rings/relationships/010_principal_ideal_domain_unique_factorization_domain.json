@@ -1,0 +1,8 @@
+{
+  "id": 10,
+  "name": "A Principal Ideal Domain is a Unique Factorization Domain",
+  "short_name": "principal_ideal_domain_unique_factorization_domain",
+  "containee": "#principal_ideal_domain",
+  "container": "#unique_factorization_domain",
+  "witness": ""
+}
