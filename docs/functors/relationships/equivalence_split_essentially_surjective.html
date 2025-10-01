@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Mathematical-Structures/functors/">
-        <title>Classes of mathematical structures - Functors</title>
+        <title>Relationships between classes - Functors</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Classes of mathematical structures - Functors</h1>
+            <h1>Relationships between classes - Functors</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,26 +63,16 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-3" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-52" style="position:relative;">
         
-        <h3><a href="classes/functor.html" class="table-title-link">Functor</a></h3>
+        <h3><a href="relationships/equivalence_split_essentially_surjective.html" class="table-title-link">An Equivalence of Categories is Split Essentially Surjective</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Functor</p>
+        <p><strong>Name: </strong>An Equivalence of Categories is Split Essentially Surjective</p>
+<p><strong>Contained Class: </strong><a href="classes/equivalence.html">Equivalence of Categories</a></p>
+<p><strong>Container Class: </strong><a href="classes/split_essentially_surjective.html">Split Essentially Surjective Functor</a></p>
 
-<strong>Definition:</strong><div class="text-field"><p>A <strong>Functor</strong> $F$ between categories $C$ and $D$ is a <a href="classes/map.html">Map of Categories</a> such that</p>
-<ul>
-<li>$F$ associated $f:A\to B$ with $F(f):F(A)\to F(B)$ (it is a <a href="classes/st_map.html">Source and Target Preserving Map</a>)</li>
-<li>$F(g\circ f)=F(g)\circ F(f)$ (it preserves composition)</li>
-<li>$F(id_{A}) = \text{id}_{F(A)}$ (it preserves identity morphisms)</li>
-</ul></div>
-
-
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/functor_st_map.html'>A Functor is an ST Map</a></li></ul></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/full_functor_functor.html'>A Full Functor is a Functor</a></li><li><a href='relationships/faithful_functor.html'>A Faithful Functor is a Functor</a></li><li><a href='relationships/left_adjoint_functor.html'>A Left Adjoint Functor is a Functor</a></li><li><a href='relationships/right_adjoint_functor.html'>A Right Adjoint Functor is a Functor</a></li><li><a href='relationships/preserves_limits_functor.html'>A Functor that Preserves Limits is a Functor</a></li><li><a href='relationships/preserves_colimits_functor.html'>A Functor that Preserves Colimits is a Functor</a></li><li><a href='relationships/injective_on_objects_functor.html'>An Injective-on-objects Functor is a Functor</a></li><li><a href='relationships/surjective_on_objects_functor.html'>A Surjective-on-objects Functor is a Functor</a></li><li><a href='relationships/left_exact_functor.html'>A Left Exact Functor is a Functor</a></li><li><a href='relationships/right_exact_functor.html'>A Right Exact Functor is a Functor</a></li><li><a href='relationships/conservative_functor.html'>A Conservative Functor is a Functor</a></li><li><a href='relationships/essentially_injective_functor.html'>An Essentially Injective Functor is a Functor</a></li><li><a href='relationships/essentially_surjective_functor.html'>An Essentially Surjective Functor is a Functor</a></li><li><a href='relationships/pseudomonic_functor.html'>A Pseudomonic Functor is a Functor</a></li><li><a href='relationships/split_essentially_surjective_functor.html'>A Split Essentially Surjective Functor is a Functor</a></li></ul></p>
-<p><strong>On Objects:</strong> Unspecified</p>
-<p><strong>On Morphisms:</strong> Unspecified</p>
-<p><strong>On Limits:</strong> Unspecified</p>
+<strong>Comments:</strong><div class="text-field"><p>Proof: Let F: C -&gt; D be an equivalence with quasi-inverse G: D -&gt; C and natural isomorphisms η: 1_C ≅ GF and ε: FG ≅ 1_D. For any object Y in D, we have F(G(Y)) ≅ Y via ε_Y, and this isomorphism comes with a canonical inverse (ε_Y)^(-1) from the natural isomorphism structure. Thus F is split essentially surjective.</p></div>
 
         </div>
     </div>

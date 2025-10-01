@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Mathematical-Structures/functors/">
-        <title>Classes of mathematical structures - Functors</title>
+        <title>Objects or sub-classes that demonstrate the strictness of containment relationships between classes. - Functors</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Classes of mathematical structures - Functors</h1>
+            <h1>Objects or sub-classes that demonstrate the strictness of containment relationships between classes. - Functors</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,26 +63,16 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-3" style="position:relative;">
+            <div class="back-link-light"><a href="witnesses/index.html">&larr; Back to Witnesses Table</a></div>
+    <div class="table-card" id="math-8" style="position:relative;">
         
-        <h3><a href="classes/functor.html" class="table-title-link">Functor</a></h3>
+        <h3><a href="witnesses/embedding_not_isomorphism.html" class="table-title-link">An Embedding that is not an Isomorphism</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Functor</p>
+        <p><strong>Name: </strong>An Embedding that is not an Isomorphism</p>
 
-<strong>Definition:</strong><div class="text-field"><p>A <strong>Functor</strong> $F$ between categories $C$ and $D$ is a <a href="classes/map.html">Map of Categories</a> such that</p>
-<ul>
-<li>$F$ associated $f:A\to B$ with $F(f):F(A)\to F(B)$ (it is a <a href="classes/st_map.html">Source and Target Preserving Map</a>)</li>
-<li>$F(g\circ f)=F(g)\circ F(f)$ (it preserves composition)</li>
-<li>$F(id_{A}) = \text{id}_{F(A)}$ (it preserves identity morphisms)</li>
-</ul></div>
-
-
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/functor_st_map.html'>A Functor is an ST Map</a></li></ul></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/full_functor_functor.html'>A Full Functor is a Functor</a></li><li><a href='relationships/faithful_functor.html'>A Faithful Functor is a Functor</a></li><li><a href='relationships/left_adjoint_functor.html'>A Left Adjoint Functor is a Functor</a></li><li><a href='relationships/right_adjoint_functor.html'>A Right Adjoint Functor is a Functor</a></li><li><a href='relationships/preserves_limits_functor.html'>A Functor that Preserves Limits is a Functor</a></li><li><a href='relationships/preserves_colimits_functor.html'>A Functor that Preserves Colimits is a Functor</a></li><li><a href='relationships/injective_on_objects_functor.html'>An Injective-on-objects Functor is a Functor</a></li><li><a href='relationships/surjective_on_objects_functor.html'>A Surjective-on-objects Functor is a Functor</a></li><li><a href='relationships/left_exact_functor.html'>A Left Exact Functor is a Functor</a></li><li><a href='relationships/right_exact_functor.html'>A Right Exact Functor is a Functor</a></li><li><a href='relationships/conservative_functor.html'>A Conservative Functor is a Functor</a></li><li><a href='relationships/essentially_injective_functor.html'>An Essentially Injective Functor is a Functor</a></li><li><a href='relationships/essentially_surjective_functor.html'>An Essentially Surjective Functor is a Functor</a></li><li><a href='relationships/pseudomonic_functor.html'>A Pseudomonic Functor is a Functor</a></li><li><a href='relationships/split_essentially_surjective_functor.html'>A Split Essentially Surjective Functor is a Functor</a></li></ul></p>
-<p><strong>On Objects:</strong> Unspecified</p>
-<p><strong>On Morphisms:</strong> Unspecified</p>
-<p><strong>On Limits:</strong> Unspecified</p>
+<strong>Definition:</strong><div class="text-field"><p>The inclusion functor from the category of finite sets to the category of all sets is fully faithful and injective-on-objects (hence an embedding), but it is not surjective on objects, so it is not an isomorphism.</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Any non-surjective inclusion of a full subcategory provides such an example.</p></div>
+<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/isomorphism_embedding.html'>An Isomorphism of Categories is an Embedding</a></li></ul></p>
 
         </div>
     </div>
