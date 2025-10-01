@@ -1,0 +1,8 @@
+{
+  "id": 12,
+  "name": "A Left Adjoint that does not Preserve all Limits",
+  "short_name": "left_adjoint_not_preserves_limits",
+  "symbol": "",
+  "definition": "The tensor product functor $- \\otimes M: \\mathbf{Ab} \\to \\mathbf{Ab}$ for a fixed abelian group $M$ is a left adjoint (its right adjoint is $\\text{Hom}(M,-)$). However, tensor product does not preserve all limits. For example, it does not preserve infinite products in general.",
+  "comments": "Left adjoints preserve colimits but generally do not preserve limits."
+}

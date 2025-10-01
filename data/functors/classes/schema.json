@@ -78,6 +78,24 @@
         "rendered": true,
         "table": "relationships",
         "column": "container"
+    },
+    {
+        "name": "on-objects",
+        "type": "boolean",
+        "label": "On Objects",
+        "description": "Whether the class is defined via a condition on objects"
+    },
+    {
+        "name": "on-morphisms",
+        "type": "boolean",
+        "label": "On Morphisms",
+        "description": "Whether the class is defined via a condition on morphisms"
+    },
+    {
+        "name": "on-limits",
+        "type": "boolean",
+        "label": "On Limits",
+        "description": "Whether the class is defined via preservation of limits or colimits"
     }
   ]
 }

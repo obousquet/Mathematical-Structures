@@ -9,7 +9,27 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     edges = []
     # Add mathematician nodes
     for m in cache.get_table_entries("classes"):
-        color = {"color": "#AAAAAA", "fillcolor": "#F5F5F5"}
+        # Color based on on-objects, on-morphisms, and on-limits fields
+        on_objects = m.get("on-objects", False)
+        on_morphisms = m.get("on-morphisms", False)
+        on_limits = m.get("on-limits", False)
+        
+        if on_limits:
+            # Limits/colimits: orange
+            color = {"color": "#FF8C00", "fillcolor": "#FFE5CC"}
+        elif on_objects and on_morphisms:
+            # Both objects and morphisms: purple
+            color = {"color": "#8B4789", "fillcolor": "#E6D5F5"}
+        elif on_objects:
+            # Objects only: blue
+            color = {"color": "#4169E1", "fillcolor": "#D5E5F5"}
+        elif on_morphisms:
+            # Morphisms only: green
+            color = {"color": "#2E8B57", "fillcolor": "#D5F5E5"}
+        else:
+            # Neither or unspecified: gray
+            color = {"color": "#AAAAAA", "fillcolor": "#F5F5F5"}
+        
         shape = "box"
         nodes.append({
             "id": f'#classes/{m["id"]}',

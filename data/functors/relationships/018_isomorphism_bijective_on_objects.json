@@ -4,5 +4,6 @@
   "short_name": "isomorphism_bijective_on_objects",
   "containee": "#isomorphism",
   "container": "#bijective-on-objects",
-  "witness": ""
+  "witness": "",
+  "comments": "Proof: If F: C -> D is an isomorphism with inverse G: D -> C, then F ∘ G = id_D and G ∘ F = id_C. On objects, this means F(G(Y)) = Y for all Y in D and G(F(X)) = X for all X in C, so the object function is bijective."
 }

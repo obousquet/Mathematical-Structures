@@ -1,0 +1,8 @@
+{
+  "id": 10,
+  "name": "A Monadic Functor that is not an Equivalence",
+  "short_name": "monadic_not_equivalence",
+  "symbol": "",
+  "definition": "The forgetful functor $U: \\mathbf{Ab} \\to \\mathbf{Set}$ from abelian groups to sets is monadic (by Beck's monadicity theorem), but it is not an equivalence since it is neither full nor essentially surjective.",
+  "comments": "Monadic functors create algebras for a monad but need not be equivalences."
+}

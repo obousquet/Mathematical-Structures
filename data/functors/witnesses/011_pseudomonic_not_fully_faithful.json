@@ -1,0 +1,8 @@
+{
+  "id": 11,
+  "name": "A Pseudomonic Functor that is not Fully Faithful",
+  "short_name": "pseudomonic_not_fully_faithful",
+  "symbol": "",
+  "definition": "Consider a functor $F$ that is conservative and essentially injective but not faithful. For example, the quotient map from a groupoid to its skeleton can be constructed to be pseudomonic without being fully faithful.",
+  "comments": "Pseudomonic functors reflect isomorphisms and are essentially injective, but need not be fully faithful."
+}

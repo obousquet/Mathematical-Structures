@@ -4,5 +4,6 @@
   "short_name": "pseudomonic_essentially_injective",
   "containee": "#pseudomonic",
   "container": "#essentially-injective",
-  "witness": ""
+  "witness": "",
+  "comments": "Proof: Let F be pseudomonic and suppose F(X) ≅ F(Y) via isomorphism φ: F(X) -> F(Y). Since F is full on isomorphisms, there exists an isomorphism ψ: X -> Y with F(ψ) = φ. Thus X ≅ Y, so F is essentially injective."
 }

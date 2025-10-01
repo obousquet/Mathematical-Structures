@@ -4,5 +4,6 @@
   "short_name": "pseudomonic_conservative",
   "containee": "#pseudomonic",
   "container": "#conservative",
-  "witness": ""
+  "witness": "",
+  "comments": "Proof: Let F be pseudomonic and suppose F(f): F(X) -> F(Y) is an isomorphism. Since F is full on isomorphisms, there exists an isomorphism g: X -> Y in C with F(g) = F(f). Since F is faithful, f = g, so f is an isomorphism. Thus F reflects isomorphisms."
 }

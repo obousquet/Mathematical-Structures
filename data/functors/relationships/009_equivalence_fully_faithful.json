@@ -4,5 +4,6 @@
   "short_name": "equivalence_fully_faithful",
   "containee": "#equivalence",
   "container": "#fully_faithful",
-  "witness": ""
+  "witness": "",
+  "comments": "Proof: An equivalence F: C -> D is by definition fully faithful and essentially surjective. Thus it is fully faithful."
 }

@@ -4,5 +4,6 @@
   "short_name": "pseudomonic_faithful",
   "containee": "#pseudomonic",
   "container": "#faithful",
-  "witness": ""
+  "witness": "",
+  "comments": "Proof: A pseudomonic functor is by definition faithful and full on isomorphisms. Thus it is faithful."
 }

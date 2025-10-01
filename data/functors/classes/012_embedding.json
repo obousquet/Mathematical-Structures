@@ -5,5 +5,7 @@
   "symbol": "",
   "definition": "A **Functor** $F:C \\to D$ is called an **embedding** if it is fully faithful and injective-on-objects.",
   "description": "A #functor is an embedding when it is fully faithful and injective on objects.",
-  "comments": ""
+  "comments": "",
+  "on-objects": true,
+  "on-morphisms": true
 }

@@ -4,5 +4,6 @@
   "short_name": "fully_faithful_pseudomonic",
   "containee": "#fully_faithful",
   "container": "#pseudomonic",
-  "witness": ""
+  "witness": "#pseudomonic_not_fully_faithful",
+  "comments": "Proof: A fully faithful functor F is faithful (injective on hom-sets) and induces bijections F: Hom_C(X,Y) -> Hom_D(F(X),F(Y)). In particular, the restriction to isomorphisms F: Iso_C(X,Y) -> Iso_D(F(X),F(Y)) is also bijective, so F is full on isomorphisms. Thus F is pseudomonic."
 }

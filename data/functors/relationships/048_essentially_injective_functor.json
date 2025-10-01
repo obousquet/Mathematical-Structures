@@ -1,0 +1,9 @@
+{
+  "id": 48,
+  "name": "An Essentially Injective Functor is a Functor",
+  "short_name": "essentially_injective_functor",
+  "containee": "#essentially-injective",
+  "container": "#functor",
+  "witness": "",
+  "comments": "Proof: An essentially injective functor is by definition a functor with the additional property that isomorphic images imply isomorphic preimages."
+}

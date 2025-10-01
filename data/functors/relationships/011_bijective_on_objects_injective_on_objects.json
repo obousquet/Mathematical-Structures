@@ -4,5 +4,6 @@
   "short_name": "bijective_on_objects_injective_on_objects",
   "containee": "#bijective-on-objects",
   "container": "#injective-on-objects",
-  "witness": ""
+  "witness": "",
+  "comments": "Proof: A bijective function is in particular injective."
 }

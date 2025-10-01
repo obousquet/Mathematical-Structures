@@ -1,0 +1,9 @@
+{
+  "id": 53,
+  "name": "A Surjective-on-objects Functor is Essentially Surjective",
+  "short_name": "surjective_on_objects_essentially_surjective",
+  "containee": "#surjective-on-objects",
+  "container": "#essentially-surjective",
+  "witness": "#essentially_surjective_not_surjective_on_objects",
+  "comments": "Proof: If F is surjective-on-objects, then for every object Y in D, there exists X in C with F(X) = Y. Since F(X) = Y, we have F(X) ≅ Y via the identity isomorphism. Thus F is essentially surjective."
+}

@@ -5,5 +5,6 @@
   "symbol": "",
   "definition": "A **Functor** $F:C\\to D$ is called **injective-on-objects** if the function $F:Ob(C)\\to Ob(D)$ is injective.",
   "description": "A #functor is injective-on-objects when it maps distinct objects of $C$ to distinct objects of $D$.",
-  "comments": ""
+  "comments": "",
+  "on-objects": true
 }

@@ -4,5 +4,5 @@
   "short_name": "equivalence_left_adjoint",
   "containee": "#equivalence",
   "container": "#left_adjoint",
-  "witness": ""
+  "witness": "#right_adjoint_not_equivalence"
 }

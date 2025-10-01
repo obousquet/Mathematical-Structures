@@ -5,5 +5,6 @@
   "symbol": "",
   "definition": "A **Functor** $F:C\\to D$ **preserves colimits** if for every diagram $D:I\\to C$, the canonical map $F(\\operatorname{colim} D) \\to \\operatorname{colim} F(D)$ is an isomorphism.",
   "description": "A #functor preserves colimits if it commutes with the formation of colimits.",
-  "comments": ""
+  "comments": "",
+  "on-limits": true
 }

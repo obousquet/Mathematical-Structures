@@ -4,5 +4,6 @@
   "short_name": "bijective_on_objects_essentially_surjective",
   "containee": "#bijective-on-objects",
   "container": "#essentially-surjective",
-  "witness": ""
+  "witness": "",
+  "comments": "Proof: Let F be bijective-on-objects. For any object Y in D, since F is surjective-on-objects, there exists X in C with F(X) = Y, so F(X) ≅ Y (via the identity). Thus F is essentially surjective."
 }

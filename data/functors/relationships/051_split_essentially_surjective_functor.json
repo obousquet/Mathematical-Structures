@@ -1,0 +1,9 @@
+{
+  "id": 51,
+  "name": "A Split Essentially Surjective Functor is a Functor",
+  "short_name": "split_essentially_surjective_functor",
+  "containee": "#split_essentially_surjective",
+  "container": "#functor",
+  "witness": "",
+  "comments": "Proof: A split essentially surjective functor is by definition a functor with the additional property that every object in the codomain is isomorphic to the image of some object with a chosen splitting."
+}

@@ -4,5 +4,6 @@
   "short_name": "fully_faithful_full",
   "containee": "#fully_faithful",
   "container": "#full",
-  "witness": ""
+  "witness": "#full_not_faithful",
+  "comments": "Proof: A functor F is fully faithful if the induced maps F: Hom_C(X,Y) -> Hom_D(F(X),F(Y)) are bijections for all objects X,Y. Since bijections are in particular surjections, F is full."
 }

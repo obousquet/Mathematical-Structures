@@ -5,5 +5,6 @@
   "symbol": "",
   "definition": "A **Functor** $F:C\\to D$ is **left exact** if it preserves all finite limits.",
   "description": "A #functor is left exact if it preserves finite limits.",
-  "comments": ""
+  "comments": "",
+  "on-limits": true
 }

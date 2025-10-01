@@ -1,0 +1,9 @@
+{
+  "id": 49,
+  "name": "An Essentially Surjective Functor is a Functor",
+  "short_name": "essentially_surjective_functor",
+  "containee": "#essentially-surjective",
+  "container": "#functor",
+  "witness": "",
+  "comments": "Proof: An essentially surjective functor is by definition a functor with the additional property that every object in the codomain is isomorphic to the image of some object."
+}

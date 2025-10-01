@@ -5,5 +5,6 @@
   "symbol": "",
   "definition": "A **Functor** $F:C\\to D$ is called **fully faithful** when the induced function on Hom sets\n$$\nF_{X,Y}: Hom_C(X,Y)\\to Hom_D(X,Y)\n$$\nis **bijective**.",
   "description": "A **fully faithful functor** is a #functor that is bijective on Hom sets, i.e. it is a #full and a #faithful.",
-  "comments": ""
+  "comments": "",
+  "on-morphisms": true
 }

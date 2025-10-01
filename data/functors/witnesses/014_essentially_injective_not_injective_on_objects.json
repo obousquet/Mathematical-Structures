@@ -1,0 +1,8 @@
+{
+  "id": 14,
+  "name": "An Essentially Injective Functor that is not Injective-on-objects",
+  "short_name": "essentially_injective_not_injective_on_objects",
+  "symbol": "",
+  "definition": "Consider a functor between groupoids where two distinct objects in the domain are sent to isomorphic (but distinct) objects in the codomain. For example, the functor from the groupoid with two objects $\\{A, B\\}$ and one isomorphism between them, to the groupoid with one object and its identity, sending both $A$ and $B$ to the same object. This functor is essentially injective (if $F(X) \\cong F(Y)$, then $X \\cong Y$ in the domain), but not injective on objects.",
+  "comments": "Essential injectivity is about isomorphism classes, not equality of objects."
+}

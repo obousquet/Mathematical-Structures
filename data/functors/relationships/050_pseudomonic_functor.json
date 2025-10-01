@@ -1,0 +1,9 @@
+{
+  "id": 50,
+  "name": "A Pseudomonic Functor is a Functor",
+  "short_name": "pseudomonic_functor",
+  "containee": "#pseudomonic",
+  "container": "#functor",
+  "witness": "",
+  "comments": "Proof: A pseudomonic functor is by definition a functor that is faithful and full on isomorphisms."
+}

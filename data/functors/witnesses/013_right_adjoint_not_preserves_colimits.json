@@ -1,0 +1,8 @@
+{
+  "id": 13,
+  "name": "A Right Adjoint that does not Preserve all Colimits",
+  "short_name": "right_adjoint_not_preserves_colimits",
+  "symbol": "",
+  "definition": "The forgetful functor $U: \\mathbf{Grp} \\to \\mathbf{Set}$ is a right adjoint (its left adjoint is the free group functor). However, $U$ does not preserve all colimits. For example, it does not preserve coequalizers in general.",
+  "comments": "Right adjoints preserve limits but generally do not preserve colimits."
+}

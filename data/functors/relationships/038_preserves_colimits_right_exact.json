@@ -4,5 +4,6 @@
   "short_name": "preserves_colimits_right_exact",
   "containee": "#preserves_colimits",
   "container": "#right_exact",
-  "witness": ""
+  "witness": "",
+  "comments": "Proof: If a functor preserves all colimits, then in particular it preserves finite colimits, which is the definition of being right exact."
 }

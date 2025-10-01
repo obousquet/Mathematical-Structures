@@ -4,5 +4,6 @@
   "short_name": "bijective_on_objects_essentially_injective",
   "containee": "#bijective-on-objects",
   "container": "#essentially-injective",
-  "witness": ""
+  "witness": "",
+  "comments": "Proof: Let F be bijective-on-objects. If F(X) ≅ F(Y), then since F is injective-on-objects (hence F(X) = F(Y) implies X = Y), we have X = Y, thus X ≅ Y. So F is essentially injective."
 }

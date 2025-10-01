@@ -4,5 +4,6 @@
   "short_name": "equivalence_essentially_surjective",
   "containee": "#equivalence",
   "container": "#essentially-surjective",
-  "witness": ""
+  "witness": "",
+  "comments": "Proof: An equivalence F: C -> D is by definition fully faithful and essentially surjective. Thus it is essentially surjective."
 }

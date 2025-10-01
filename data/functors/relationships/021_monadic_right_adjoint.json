@@ -4,5 +4,5 @@
   "short_name": "monadic_right_adjoint",
   "containee": "#monadic",
   "container": "#right_adjoint",
-  "witness": ""
+  "witness": "#right_adjoint_not_equivalence"
 }

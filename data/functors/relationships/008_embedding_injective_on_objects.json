@@ -4,5 +4,6 @@
   "short_name": "embedding_injective_on_objects",
   "containee": "#embedding",
   "container": "#injective-on-objects",
-  "witness": "#injective_not_fully_faithful"
+  "witness": "#injective_not_fully_faithful",
+  "comments": "Proof: An embedding is by definition fully faithful and injective-on-objects. Thus it is injective-on-objects."
 }

@@ -4,5 +4,6 @@
   "short_name": "equivalence_conservative",
   "containee": "#equivalence",
   "container": "#conservative",
-  "witness": ""
+  "witness": "",
+  "comments": "Proof: An equivalence is fully faithful, and every fully faithful functor is conservative (as shown in relationship 034)."
 }

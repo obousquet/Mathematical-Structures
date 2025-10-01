@@ -5,5 +5,6 @@
   "symbol": "",
   "definition": "A **Functor** $F:C\\to D$ **preserves limits** if for every diagram $D:I\\to C$, the canonical map $F(\\lim D) \\to \\lim F(D)$ is an isomorphism.",
   "description": "A #functor preserves limits if it commutes with the formation of limits.",
-  "comments": ""
+  "comments": "",
+  "on-limits": true
 }

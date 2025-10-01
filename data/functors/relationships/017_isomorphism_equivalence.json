@@ -4,5 +4,6 @@
   "short_name": "isomorphism_equivalence",
   "containee": "#isomorphism",
   "container": "#equivalence",
-  "witness": ""
+  "witness": "#equivalence_not_isomorphism",
+  "comments": "Proof: If F: C -> D is an isomorphism with inverse G, then F is fully faithful (the hom-set maps are bijective since G provides inverses) and essentially surjective (every object Y in D equals F(G(Y)), so is isomorphic to the image of an object from C)."
 }

@@ -5,5 +5,7 @@
   "symbol": "",
   "definition": "A **Functor** $F:C\\to D$ is an **equivalence of categories** if it is fully faithful and essentially surjective.",
   "description": "A #functor is an equivalence when it is fully faithful and essentially surjective.",
-  "comments": ""
+  "comments": "",
+  "on-objects": true,
+  "on-morphisms": true
 }

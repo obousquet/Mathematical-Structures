@@ -4,5 +4,6 @@
   "short_name": "left_adjoint_preserves_colimits",
   "containee": "#left_adjoint",
   "container": "#preserves_colimits",
-  "witness": ""
+  "witness": "#left_adjoint_not_preserves_limits",
+  "comments": "Proof: Let F: C -> D be left adjoint to G: D -> C. For any diagram I -> C with colimit L, we have Hom_D(F(L),Y) ≅ Hom_C(L,G(Y)) ≅ lim Hom_C(X_i,G(Y)) ≅ lim Hom_D(F(X_i),Y) ≅ Hom_D(colim F(X_i),Y). By Yoneda, F(L) ≅ colim F(X_i)."
 }

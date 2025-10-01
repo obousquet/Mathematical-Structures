@@ -4,5 +4,5 @@
   "short_name": "isomorphism_embedding",
   "containee": "#isomorphism",
   "container": "#embedding",
-  "witness": ""
+  "witness": "#embedding_not_isomorphism"
 }

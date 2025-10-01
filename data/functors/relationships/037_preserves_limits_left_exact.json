@@ -4,5 +4,6 @@
   "short_name": "preserves_limits_left_exact",
   "containee": "#preserves_limits",
   "container": "#left_exact",
-  "witness": ""
+  "witness": "",
+  "comments": "Proof: If a functor preserves all limits, then in particular it preserves finite limits, which is the definition of being left exact."
 }

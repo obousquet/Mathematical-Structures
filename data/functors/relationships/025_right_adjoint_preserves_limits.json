@@ -4,5 +4,6 @@
   "short_name": "right_adjoint_preserves_limits",
   "containee": "#right_adjoint",
   "container": "#preserves_limits",
-  "witness": ""
+  "witness": "#right_adjoint_not_preserves_colimits",
+  "comments": "Proof: Let G: D -> C be right adjoint to F: C -> D. For any diagram I -> D with limit L, we have Hom_C(X,G(L)) ≅ Hom_D(F(X),L) ≅ lim Hom_D(F(X),Y_i) ≅ lim Hom_C(X,G(Y_i)) ≅ Hom_C(X,lim G(Y_i)). By Yoneda, G(L) ≅ lim G(Y_i)."
 }

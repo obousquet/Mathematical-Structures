@@ -5,5 +5,6 @@
   "symbol": "",
   "definition": "A **Functor** $F:C\\to D$ is called **bijective-on-objects** if the function $F:Ob(C)\\to Ob(D)$ is bijective.",
   "description": "A #functor is bijective-on-objects when it gives a one-to-one correspondence between objects of $C$ and $D$.",
-  "comments": ""
+  "comments": "",
+  "on-objects": true
 }

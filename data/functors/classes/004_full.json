@@ -5,5 +5,6 @@
   "symbol": "",
   "definition": "A **Functor** $F:C\\to D$ is called **full** when the induced function on Hom sets\n$$\nF_{X,Y}: Hom_C(X,Y)\\to Hom_D(X,Y)\n$$\nis **surjective**.",
   "description": "A #functor is full when it is surjective on Hom sets.",
-  "comments": ""
+  "comments": "",
+  "on-morphisms": true
 }

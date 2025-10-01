@@ -1,0 +1,8 @@
+{
+  "id": 9,
+  "name": "A Right Adjoint that is not an Equivalence",
+  "short_name": "right_adjoint_not_equivalence",
+  "symbol": "",
+  "definition": "The forgetful functor $U: \\mathbf{Grp} \\to \\mathbf{Set}$ from groups to sets has a left adjoint (the free group functor), making it a right adjoint. However, $U$ is neither full, nor faithful, nor essentially surjective, so it is not an equivalence.",
+  "comments": "Most forgetful functors are adjoints but not equivalences."
+}

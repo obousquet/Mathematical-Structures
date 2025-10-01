@@ -1,0 +1,9 @@
+{
+  "id": 52,
+  "name": "An Equivalence of Categories is Split Essentially Surjective",
+  "short_name": "equivalence_split_essentially_surjective",
+  "containee": "#equivalence",
+  "container": "#split_essentially_surjective",
+  "witness": "",
+  "comments": "Proof: Let F: C -> D be an equivalence with quasi-inverse G: D -> C and natural isomorphisms η: 1_C ≅ GF and ε: FG ≅ 1_D. For any object Y in D, we have F(G(Y)) ≅ Y via ε_Y, and this isomorphism comes with a canonical inverse (ε_Y)^(-1) from the natural isomorphism structure. Thus F is split essentially surjective."
+}
