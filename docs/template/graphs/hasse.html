@@ -102,6 +102,7 @@
     <script src="js/d3-graphviz.js"></script>
     <script>
     const nodeCards = {"#classes/1": "\n    <div class=\"table-card\" id=\"math-1\" style=\"position:relative;\">\n        \n        <h3><a href=\"classes/integers.html\" class=\"table-title-link\">Integers</a></h3>\n        <div class=\"table-details\">\n        <p><strong>Name: </strong>Integers</p>\n<strong>Symbol:</strong>\n    <div class=\"table-display\">\n        <div class=\"latex-equation\" data-latex=\"\\mathbb{Z}\">\n            \\mathbb{Z}\n        </div>\n    </div>\n    \n\n\n\n<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/integers_rationals.html'>Integers are Rationals</a></li></ul></p>\n<p><strong>Contains:</strong> <em>None</em></p>\n\n        </div>\n    </div>\n    ", "#classes/2": "\n    <div class=\"table-card\" id=\"math-2\" style=\"position:relative;\">\n        \n        <h3><a href=\"classes/rationals.html\" class=\"table-title-link\">Rationals</a></h3>\n        <div class=\"table-details\">\n        <p><strong>Name: </strong>Rationals</p>\n<strong>Symbol:</strong>\n    <div class=\"table-display\">\n        <div class=\"latex-equation\" data-latex=\"\\mathbb{Q}\">\n            \\mathbb{Q}\n        </div>\n    </div>\n    \n\n\n\n<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/rationals_reals.html'>Rationals are Reals</a></li></ul></p>\n<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/integers_rationals.html'>Integers are Rationals</a></li></ul></p>\n\n        </div>\n    </div>\n    ", "#classes/3": "\n    <div class=\"table-card\" id=\"math-3\" style=\"position:relative;\">\n        \n        <h3><a href=\"classes/reals.html\" class=\"table-title-link\">Reals</a></h3>\n        <div class=\"table-details\">\n        <p><strong>Name: </strong>Reals</p>\n<strong>Symbol:</strong>\n    <div class=\"table-display\">\n        <div class=\"latex-equation\" data-latex=\"\\mathbb{R}\">\n            \\mathbb{R}\n        </div>\n    </div>\n    \n\n\n\n<p><strong>Contained in:</strong> <em>None</em></p>\n<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/rationals_reals.html'>Rationals are Reals</a></li></ul></p>\n\n        </div>\n    </div>\n    "};
+    const edgeCards = {"__edge__0": "\n    <div class=\"table-card\" id=\"math-1\" style=\"position:relative;\">\n        \n        <h3><a href=\"relationships/integers_rationals.html\" class=\"table-title-link\">Integers are Rationals</a></h3>\n        <div class=\"table-details\">\n        <p><strong>Name: </strong>Integers are Rationals</p>\n<p><strong>Contained Class: </strong><a href=\"classes/integers.html\">Integers</a></p>\n<p><strong>Container Class: </strong><a href=\"classes/rationals.html\">Rationals</a></p>\n<p><strong>Witness: </strong><a href=\"witnesses/one_half.html\">One half</a></p>\n\n        </div>\n    </div>\n    ", "__label__0": "\n    <div class=\"table-card\" id=\"math-1\" style=\"position:relative;\">\n        \n        <h3><a href=\"witnesses/one_half.html\" class=\"table-title-link\">One half</a></h3>\n        <div class=\"table-details\">\n        <p><strong>Name: </strong>One half</p>\n<strong>Symbol:</strong>\n    <div class=\"table-display\">\n        <div class=\"latex-equation\" data-latex=\"\\frac{1}{2}\">\n            \\frac{1}{2}\n        </div>\n    </div>\n    \n\n\n<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/integers_rationals.html'>Integers are Rationals</a></li></ul></p>\n\n        </div>\n    </div>\n    ", "__edge__1": "\n    <div class=\"table-card\" id=\"math-2\" style=\"position:relative;\">\n        \n        <h3><a href=\"relationships/rationals_reals.html\" class=\"table-title-link\">Rationals are Reals</a></h3>\n        <div class=\"table-details\">\n        <p><strong>Name: </strong>Rationals are Reals</p>\n<p><strong>Contained Class: </strong><a href=\"classes/rationals.html\">Rationals</a></p>\n<p><strong>Container Class: </strong><a href=\"classes/reals.html\">Reals</a></p>\n<p><strong>Witness: </strong><a href=\"witnesses/sqrt_2.html\">Square root of 2</a></p>\n\n        </div>\n    </div>\n    ", "__label__1": "\n    <div class=\"table-card\" id=\"math-2\" style=\"position:relative;\">\n        \n        <h3><a href=\"witnesses/sqrt_2.html\" class=\"table-title-link\">Square root of 2</a></h3>\n        <div class=\"table-details\">\n        <p><strong>Name: </strong>Square root of 2</p>\n<strong>Symbol:</strong>\n    <div class=\"table-display\">\n        <div class=\"latex-equation\" data-latex=\"\\sqrt{2}\">\n            \\sqrt{2}\n        </div>\n    </div>\n    \n\n\n<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/rationals_reals.html'>Rationals are Reals</a></li></ul></p>\n\n        </div>\n    </div>\n    "};
     document.addEventListener('DOMContentLoaded', function() {
         const graphContainer = d3.select('#graph-container-main');
         let width = graphContainer.node().clientWidth;
@@ -112,19 +113,37 @@
             .width(width)
             .height(height)
             .fit(true)
-            .renderDot(`strict digraph "" {graph [bgcolor=transparent]; node [label="\N", penwidth=1.8]; edge [arrowhead=vee]; "#classes/1" [label="Integers", color="#AAAAAA", fillcolor="#F5F5F5", style=filled, shape=box, style=filled]; "#classes/2" [label="Rationals", color="#AAAAAA", fillcolor="#F5F5F5", style=filled, shape=box, style=filled]; "#classes/3" [label="Reals", color="#AAAAAA", fillcolor="#F5F5F5", style=filled, shape=box, style=filled]; "#classes/1" -> "#classes/2" [label="one_half", color="#000000", arrowhead=normal, style=solid]; "#classes/2" -> "#classes/3" [label="sqrt_2", color="#000000", arrowhead=normal, style=solid]; }`)
+            .renderDot(`strict digraph "" {graph [bgcolor=transparent]; node [label="\N", penwidth=1.8]; edge [arrowhead=vee]; "#classes/1" [label="Integers", color="#AAAAAA", fillcolor="#F5F5F5", style=filled, shape=box, style=filled]; "#classes/2" [label="Rationals", color="#AAAAAA", fillcolor="#F5F5F5", style=filled, shape=box, style=filled]; "#classes/3" [label="Reals", color="#AAAAAA", fillcolor="#F5F5F5", style=filled, shape=box, style=filled]; "__edge__0" [shape=box, style=filled, fillcolor="#f0f0f0", fontsize=10, width=0.3, height=0.3, label="one_half"]; "__edge__1" [shape=box, style=filled, fillcolor="#f0f0f0", fontsize=10, width=0.3, height=0.3, label="sqrt_2"]; "#classes/1" -> "__edge__0" [label="", color="#000000", arrowhead=normal, style=solid, arrowsize=0.7, dir=none]; "__edge__0" -> "#classes/2" [label="", color="#000000", arrowhead=normal, style=solid, arrowsize=0.7]; "#classes/2" -> "__edge__1" [label="", color="#000000", arrowhead=normal, style=solid, arrowsize=0.7, dir=none]; "__edge__1" -> "#classes/3" [label="", color="#000000", arrowhead=normal, style=solid, arrowsize=0.7]; }`)
             .on('end', function() {
-                d3.selectAll('.node').on('click', function() {
-                    var node_id = d3.select(this).attr('id');
+                d3.selectAll('.node').on('click', function(event) {
                     var node_id = d3.select(this).select('title').text();
                     if (!node_id) {
                         node_id = d3.select(this).select('text').text();
                     }
-                    var modal = document.getElementById('node-modal');
-                    var content = document.getElementById('node-modal-content');
-                    content.innerHTML = nodeCards[node_id] || '<div class="table-card"><h3>' + node_id + '</h3></div>';
-                    modal.style.display = 'block';
-                    if (window.MathJax) MathJax.typesetPromise([content]);
+                    
+                    // Check if this is an edge label node
+                    if (node_id.startsWith('__edge__')) {
+                        var edge_idx = parseInt(node_id.replace('__edge__', ''));
+                        // Get the edge card by index
+                        var edge_card = edgeCards[node_id];
+                        var edge_label_key = '__label__' + edge_idx;
+                        // If there's a label card, show it instead
+                        if (edgeCards[edge_label_key]) {
+                            edge_card = edgeCards[edge_label_key];
+                        }
+                        var modal = document.getElementById('node-modal');
+                        var content = document.getElementById('node-modal-content');
+                        content.innerHTML = edge_card || '<div class="table-card"><h3>Edge ' + edge_idx + '</h3></div>';
+                        modal.style.display = 'block';
+                        if (window.MathJax) MathJax.typesetPromise([content]);
+                    } else {
+                        // Regular node
+                        var modal = document.getElementById('node-modal');
+                        var content = document.getElementById('node-modal-content');
+                        content.innerHTML = nodeCards[node_id] || '<div class="table-card"><h3>' + node_id + '</h3></div>';
+                        modal.style.display = 'block';
+                        if (window.MathJax) MathJax.typesetPromise([content]);
+                    }
                 });
             });
         // Close modal when clicking outside

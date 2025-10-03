@@ -39,8 +39,9 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         edges.append({
             "source": f'#classes/{p1["id"]}',
             "target": f'#classes/{p2["id"]}',
-            "ref": ref,
+            "ref": f'#relationships/{r["id"]}',
             "label": label,
+            "label_ref": ref,
             **arrow
         })
 
