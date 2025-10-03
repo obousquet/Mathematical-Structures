@@ -64,6 +64,24 @@
         </header>
         <main class="table-container">
             
+    <div style="margin-bottom: 1em; display: flex; justify-content: space-between; align-items: center; gap: 1em; flex-wrap: wrap;">
+        <div style="flex: 1;">
+            <input type="text" id="search-box" placeholder="Search by name..." style="width: 100%; max-width: 400px; padding: 0.5em; font-size: 1em; border: 1px solid #ccc; border-radius: 4px;" oninput="filterCards()">
+        </div>
+        <div style="display: flex; gap: 0.5em; align-items: center; flex-wrap: wrap;">
+            
+            <div style="display: flex; gap: 0.5em; align-items: center;">
+                <label style="margin-right: 0.5em;">View:</label>
+                <button id="compact-toggle" class="btn btn-primary" onclick="toggleCompactMode()">Compact</button>
+            </div>
+            <div style="display: flex; gap: 0.5em; align-items: center;">
+                <label style="margin-right: 0.5em;">Sort by:</label>
+                <button class="btn btn-primary" onclick="sortCards('id')">ID</button>
+                <button class="btn btn-primary" onclick="sortCards('name')">Name</button>
+            </div>
+        </div>
+    </div>
+    
             <div class="table-description">
                 <p>Objects or sub-classes that demonstrate the strictness of containment relationships between classes.</p>
             </div>
@@ -77,7 +95,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>Consider the map from the category with two objects ${0,1}$ to itself that maps $id_0$ to $id_1$. It does not preserve source and targets.</p></div>
 
-<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/st_map_map.html'>A ST Map is a Map</a></li></ul></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/st_map_map.html'>A ST Map is a Map</a></li></ul></p></div>
 
         </div>
     </div>
@@ -90,7 +108,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>The inclusion functor $i: \mathbf{InjSet} \to \mathbf{Set}$ from the category of sets with injective maps to the category of sets is faithful but not full, since not every function between sets is injective.</p></div>
 
-<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/fully_faithful_faithful.html'>A Fully Faithful Functor is Faithful</a></li></ul></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/fully_faithful_faithful.html'>A Fully Faithful Functor is Faithful</a></li></ul></p></div>
 
         </div>
     </div>
@@ -103,7 +121,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>Consider the functor from a category with one object and one morphism to a category with two objects and two parallel morphisms between them. This functor is full but not faithful.</p></div>
 
-<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/fully_faithful_full.html'>A Fully Faithful Functor is Full</a></li></ul></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/fully_faithful_full.html'>A Fully Faithful Functor is Full</a></li></ul></p></div>
 
         </div>
     </div>
@@ -116,7 +134,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>The inclusion functor from the category of finite-dimensional vector spaces over a field to the category of all vector spaces is essentially surjective but not surjective-on-objects.</p></div>
 
-<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/surjective_on_objects_essentially_surjective.html'>A Surjective-on-objects Functor is Essentially Surjective</a></li></ul></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/surjective_on_objects_essentially_surjective.html'>A Surjective-on-objects Functor is Essentially Surjective</a></li></ul></p></div>
 
         </div>
     </div>
@@ -129,7 +147,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>The forgetful functor from the category of groups to the category of sets is injective-on-objects but not fully faithful.</p></div>
 
-<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/embedding_injective_on_objects.html'>An Embedding Functor is Injective-on-objects</a></li></ul></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/embedding_injective_on_objects.html'>An Embedding Functor is Injective-on-objects</a></li></ul></p></div>
 
         </div>
     </div>
@@ -142,7 +160,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>The inclusion functor from the category of abelian groups to the category of groups is conservative but not fully faithful.</p></div>
 
-<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/fully_faithful_conservative.html'>A Fully Faithful Functor is Conservative</a></li></ul></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/fully_faithful_conservative.html'>A Fully Faithful Functor is Conservative</a></li></ul></p></div>
 
         </div>
     </div>
@@ -155,7 +173,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>Consider the category $\mathbf{FinVect}_k$ of finite-dimensional vector spaces over a field $k$, and let $C$ be the full subcategory consisting of just one representative from each isomorphism class (e.g., $k^n$ for each $n \geq 0$). The inclusion functor $F: C \to \mathbf{FinVect}_k$ is fully faithful and essentially surjective, hence an equivalence. However, it is not surjective on objects, so it is not an isomorphism of categories.</p></div>
 <strong>Comments:</strong><div class="text-field"><p>This is the canonical example showing that equivalence is weaker than isomorphism.</p></div>
-<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/isomorphism_equivalence.html'>An Isomorphism of Categories is an Equivalence</a></li></ul></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/isomorphism_equivalence.html'>An Isomorphism of Categories is an Equivalence</a></li></ul></p></div>
 
         </div>
     </div>
@@ -168,7 +186,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>The inclusion functor from the category of finite sets to the category of all sets is fully faithful and injective-on-objects (hence an embedding), but it is not surjective on objects, so it is not an isomorphism.</p></div>
 <strong>Comments:</strong><div class="text-field"><p>Any non-surjective inclusion of a full subcategory provides such an example.</p></div>
-<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/isomorphism_embedding.html'>An Isomorphism of Categories is an Embedding</a></li></ul></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/isomorphism_embedding.html'>An Isomorphism of Categories is an Embedding</a></li></ul></p></div>
 
         </div>
     </div>
@@ -181,7 +199,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>The forgetful functor $U: \mathbf{Grp} \to \mathbf{Set}$ from groups to sets has a left adjoint (the free group functor), making it a right adjoint. However, $U$ is neither full, nor faithful, nor essentially surjective, so it is not an equivalence.</p></div>
 <strong>Comments:</strong><div class="text-field"><p>Most forgetful functors are adjoints but not equivalences.</p></div>
-<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/monadic_right_adjoint.html'>A Monadic Functor is a Right Adjoint</a></li><li><a href='relationships/equivalence_left_adjoint.html'>An Equivalence of Categories is a Left Adjoint Functor</a></li></ul></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/monadic_right_adjoint.html'>A Monadic Functor is a Right Adjoint</a></li><li><a href='relationships/equivalence_left_adjoint.html'>An Equivalence of Categories is a Left Adjoint Functor</a></li></ul></p></div>
 
         </div>
     </div>
@@ -194,7 +212,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>The forgetful functor $U: \mathbf{Ab} \to \mathbf{Set}$ from abelian groups to sets is monadic (by Beck's monadicity theorem), but it is not an equivalence since it is neither full nor essentially surjective.</p></div>
 <strong>Comments:</strong><div class="text-field"><p>Monadic functors create algebras for a monad but need not be equivalences.</p></div>
-<p><strong>Related Relationships:</strong> <em>None</em></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong> <em>None</em></p></div>
 
         </div>
     </div>
@@ -207,7 +225,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>Consider a functor $F$ that is conservative and essentially injective but not faithful. For example, the quotient map from a groupoid to its skeleton can be constructed to be pseudomonic without being fully faithful.</p></div>
 <strong>Comments:</strong><div class="text-field"><p>Pseudomonic functors reflect isomorphisms and are essentially injective, but need not be fully faithful.</p></div>
-<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/fully_faithful_pseudomonic.html'>A Fully Faithful Functor is Pseudomonic</a></li></ul></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/fully_faithful_pseudomonic.html'>A Fully Faithful Functor is Pseudomonic</a></li></ul></p></div>
 
         </div>
     </div>
@@ -220,7 +238,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>The tensor product functor $- \otimes M: \mathbf{Ab} \to \mathbf{Ab}$ for a fixed abelian group $M$ is a left adjoint (its right adjoint is $\text{Hom}(M,-)$). However, tensor product does not preserve all limits. For example, it does not preserve infinite products in general.</p></div>
 <strong>Comments:</strong><div class="text-field"><p>Left adjoints preserve colimits but generally do not preserve limits.</p></div>
-<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/left_adjoint_preserves_colimits.html'>A Left Adjoint Functor Preserves Colimits</a></li></ul></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/left_adjoint_preserves_colimits.html'>A Left Adjoint Functor Preserves Colimits</a></li></ul></p></div>
 
         </div>
     </div>
@@ -233,7 +251,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>The forgetful functor $U: \mathbf{Grp} \to \mathbf{Set}$ is a right adjoint (its left adjoint is the free group functor). However, $U$ does not preserve all colimits. For example, it does not preserve coequalizers in general.</p></div>
 <strong>Comments:</strong><div class="text-field"><p>Right adjoints preserve limits but generally do not preserve colimits.</p></div>
-<p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/right_adjoint_preserves_limits.html'>A Right Adjoint Functor Preserves Limits</a></li></ul></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/right_adjoint_preserves_limits.html'>A Right Adjoint Functor Preserves Limits</a></li></ul></p></div>
 
         </div>
     </div>
@@ -246,7 +264,7 @@
 
 <strong>Definition:</strong><div class="text-field"><p>Consider a functor between groupoids where two distinct objects in the domain are sent to isomorphic (but distinct) objects in the codomain. For example, the functor from the groupoid with two objects ${A, B}$ and one isomorphism between them, to the groupoid with one object and its identity, sending both $A$ and $B$ to the same object. This functor is essentially injective (if $F(X) \cong F(Y)$, then $X \cong Y$ in the domain), but not injective on objects.</p></div>
 <strong>Comments:</strong><div class="text-field"><p>Essential injectivity is about isomorphism classes, not equality of objects.</p></div>
-<p><strong>Related Relationships:</strong> <em>None</em></p>
+<div class="reference-field"><p><strong>Related Relationships:</strong> <em>None</em></p></div>
 
         </div>
     </div>
@@ -275,6 +293,73 @@
                 tryTypeset();
             });
         </script>
+    <script>
+    let isCompactMode = false;
+    
+    function sortCards(sortBy) {
+        const grid = document.querySelector('.table-grid');
+        const cards = Array.from(grid.querySelectorAll('.table-card'));
+        
+        cards.sort((a, b) => {
+            if (sortBy === 'id') {
+                const idA = parseInt(a.id.replace('math-', '')) || 0;
+                const idB = parseInt(b.id.replace('math-', '')) || 0;
+                return idA - idB;
+            } else if (sortBy === 'name') {
+                const nameA = (a.querySelector('h3 a') || a.querySelector('h3')).textContent.toLowerCase();
+                const nameB = (b.querySelector('h3 a') || b.querySelector('h3')).textContent.toLowerCase();
+                return nameA.localeCompare(nameB);
+            }
+            return 0;
+        });
+        
+        // Clear grid and re-append sorted cards
+        grid.innerHTML = '';
+        cards.forEach(card => grid.appendChild(card));
+    }
+    
+    function filterCards() {
+        const searchTerm = document.getElementById('search-box').value.toLowerCase();
+        const grid = document.querySelector('.table-grid');
+        const cards = grid.querySelectorAll('.table-card');
+        
+        cards.forEach(card => {
+            const name = (card.querySelector('h3 a') || card.querySelector('h3')).textContent.toLowerCase();
+            if (name.includes(searchTerm)) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+    
+    function toggleCompactMode() {
+        isCompactMode = !isCompactMode;
+        const toggleBtn = document.getElementById('compact-toggle');
+        const cards = document.querySelectorAll('.table-card');
+        
+        cards.forEach(card => {
+            // Find all fields with reference type (they contain 'fields-list' ul elements within paragraphs)
+            const details = card.querySelector('.table-details');
+            if (details) {
+                const ref_fields = details.querySelectorAll('.reference-field');
+                ref_fields.forEach(p => {
+                    // Check if this paragraph contains a list (likely a reference field)
+                    if (p.querySelector('ul.fields-list')) {
+                        if (isCompactMode) {
+                            p.style.display = 'none';
+                        } else {
+                            p.style.display = '';
+                        }
+                    }
+                });
+            }
+        });
+        
+        toggleBtn.textContent = isCompactMode ? 'Normal' : 'Compact';
+    }
+    </script>
+    
     </body>
     </html>
     

@@ -64,6 +64,24 @@
         </header>
         <main class="table-container">
             
+    <div style="margin-bottom: 1em; display: flex; justify-content: space-between; align-items: center; gap: 1em; flex-wrap: wrap;">
+        <div style="flex: 1;">
+            <input type="text" id="search-box" placeholder="Search by name..." style="width: 100%; max-width: 400px; padding: 0.5em; font-size: 1em; border: 1px solid #ccc; border-radius: 4px;" oninput="filterCards()">
+        </div>
+        <div style="display: flex; gap: 0.5em; align-items: center; flex-wrap: wrap;">
+            
+            <div style="display: flex; gap: 0.5em; align-items: center;">
+                <label style="margin-right: 0.5em;">View:</label>
+                <button id="compact-toggle" class="btn btn-primary" onclick="toggleCompactMode()">Compact</button>
+            </div>
+            <div style="display: flex; gap: 0.5em; align-items: center;">
+                <label style="margin-right: 0.5em;">Sort by:</label>
+                <button class="btn btn-primary" onclick="sortCards('id')">ID</button>
+                <button class="btn btn-primary" onclick="sortCards('name')">Name</button>
+            </div>
+        </div>
+    </div>
+    
             <div class="table-description">
                 <p>Classes of mathematical structures</p>
             </div>
@@ -83,8 +101,8 @@
 </ul></div>
 <strong>Description:</strong><div class="text-field"><p>A <a href="classes/ring.html">Ring</a> without unit (aka non-unital ring, or pseudo-ring).</p></div>
 
-<p><strong>Contained in:</strong> <em>None</em></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/ring_rng.html'>A Ring is a Rng</a></li></ul></p>
+<div class="reference-field"><p><strong>Contained in:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/ring_rng.html'>A Ring is a Rng</a></li></ul></p></div>
 
         </div>
     </div>
@@ -103,8 +121,8 @@
 </ul></div>
 <strong>Description:</strong><div class="text-field"><p>A ring is a set endowed with two binary operations, addition and multiplication. It is an abelian group for addition, a monoid for multiplication and multiplication distributes over addition.</p></div>
 
-<p><strong>Contained in:</strong> <em>None</em></p>
-<p><strong>Contains:</strong> <em>None</em></p>
+<div class="reference-field"><p><strong>Contained in:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Contains:</strong> <em>None</em></p></div>
 
         </div>
     </div>
@@ -118,8 +136,8 @@
 <strong>Definition:</strong><div class="text-field"><p>A ring $R$ is called <strong>commutative</strong> when $(R, \cdot)$ is a commutative monoid.</p></div>
 <strong>Description:</strong><div class="text-field"><p>A commutative ring is a ring with a commutative multiplication.</p></div>
 
-<p><strong>Contained in:</strong> <em>None</em></p>
-<p><strong>Contains:</strong> <em>None</em></p>
+<div class="reference-field"><p><strong>Contained in:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Contains:</strong> <em>None</em></p></div>
 
         </div>
     </div>
@@ -144,8 +162,8 @@ $$</p></div>
 <li>An integral domain is a <a href="classes/ring.html">Ring</a> that is isomorphic to a subring of a <a href="classes/field.html">Field</a>. (Given an integral domain, one can embed it in its field of fractions.)</li>
 </ul></div>
 
-<p><strong>Contained in:</strong> <em>None</em></p>
-<p><strong>Contains:</strong> <em>None</em></p>
+<div class="reference-field"><p><strong>Contained in:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Contains:</strong> <em>None</em></p></div>
 
         </div>
     </div>
@@ -164,8 +182,8 @@ $$</p></div>
 </ul></div>
 <strong>Description:</strong><div class="text-field"><p>A ring is a set endowed with two binary operations, addition and multiplication. It is an abelian group for addition, a monoid for multiplication and multiplication distributes over addition.</p></div>
 
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/ring_rng.html'>A Ring is a Rng</a></li></ul></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/commutative_ring_ring.html'>A Commutative Ring is a Ring</a></li><li><a href='relationships/noetherian_ring_ring.html'>A Noetherian Ring is a Ring</a></li><li><a href='relationships/division_ring_ring.html'>A Division Ring is a Ring</a></li></ul></p>
+<div class="reference-field"><p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/ring_rng.html'>A Ring is a Rng</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/commutative_ring_ring.html'>A Commutative Ring is a Ring</a></li><li><a href='relationships/noetherian_ring_ring.html'>A Noetherian Ring is a Ring</a></li><li><a href='relationships/division_ring_ring.html'>A Division Ring is a Ring</a></li></ul></p></div>
 
         </div>
     </div>
@@ -179,8 +197,8 @@ $$</p></div>
 <strong>Definition:</strong><div class="text-field"><p>A ring $R$ is called <strong>commutative</strong> when $(R, \cdot)$ is a commutative monoid.</p></div>
 <strong>Description:</strong><div class="text-field"><p>A commutative ring is a <a href="classes/ring.html">Ring</a> with a commutative multiplication.</p></div>
 
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/commutative_ring_ring.html'>A Commutative Ring is a Ring</a></li></ul></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/integral_domain_commutative_ring.html'>An Integral Domain is a Commutative Ring</a></li></ul></p>
+<div class="reference-field"><p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/commutative_ring_ring.html'>A Commutative Ring is a Ring</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/integral_domain_commutative_ring.html'>An Integral Domain is a Commutative Ring</a></li></ul></p></div>
 
         </div>
     </div>
@@ -205,8 +223,8 @@ $$</p></div>
 <li>An integral domain is a <a href="classes/ring.html">Ring</a> that is isomorphic to a subring of a <a href="classes/field.html">Field</a>. (Given an integral domain, one can embed it in its field of fractions.)</li>
 </ul></div>
 
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/integral_domain_commutative_ring.html'>An Integral Domain is a Commutative Ring</a></li></ul></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/integrally_closed_domain_integral_domain.html'>An Integrally Closed Domain is an Integral Domain</a></li></ul></p>
+<div class="reference-field"><p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/integral_domain_commutative_ring.html'>An Integral Domain is a Commutative Ring</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/integrally_closed_domain_integral_domain.html'>An Integrally Closed Domain is an Integral Domain</a></li></ul></p></div>
 
         </div>
     </div>
@@ -220,8 +238,8 @@ $$</p></div>
 <strong>Definition:</strong><div class="text-field"><p>An <strong>integrally closed domain</strong> $R$ is an integral domain such that if $x$ is a root of a monic polynomial with coefficients in $R$, then $x\in R$.</p></div>
 <strong>Description:</strong><div class="text-field"><p>An <strong>integrally closed domain</strong> $R$ is an <a href="classes/integral_domain.html">Integral Domain</a> whose integral closure in its field of fractions is $R$ itself. This means that if $x$ is an element of the field of fractions of $R$, i.e. a root of a monic polynomial with coefficients in $R$, then $x$ is itself an element of $R$.</p></div>
 
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/integrally_closed_domain_integral_domain.html'>An Integrally Closed Domain is an Integral Domain</a></li></ul></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/gcd_domain_integrally_closed_domain.html'>A GCD Domain is an Integrally Closed Domain</a></li></ul></p>
+<div class="reference-field"><p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/integrally_closed_domain_integral_domain.html'>An Integrally Closed Domain is an Integral Domain</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/gcd_domain_integrally_closed_domain.html'>A GCD Domain is an Integrally Closed Domain</a></li></ul></p></div>
 
         </div>
     </div>
@@ -240,8 +258,8 @@ $$</p></div>
 <li>Any two elements have a least common multiple</li>
 </ul></div>
 
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/gcd_domain_integrally_closed_domain.html'>A GCD Domain is an Integrally Closed Domain</a></li></ul></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/unique_factorization_domain_gcd_domain.html'>A Unique Factorization Domain is a GCD Domain</a></li></ul></p>
+<div class="reference-field"><p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/gcd_domain_integrally_closed_domain.html'>A GCD Domain is an Integrally Closed Domain</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/unique_factorization_domain_gcd_domain.html'>A Unique Factorization Domain is a GCD Domain</a></li></ul></p></div>
 
         </div>
     </div>
@@ -262,8 +280,8 @@ $$</p></div>
 <li>For any two ideals $I$ and $J$ in $R$, $I$ is contained in $J$ if and only if $J$ divides $I$ as ideals, i.e. there exists an ideal $H$ such that $I=JH$.</li>
 </ol></div>
 
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/dedekind_domain_noetherian_ring.html'>A Dedekind Domain is a Noetherian Ring</a></li></ul></p>
-<p><strong>Contains:</strong> <em>None</em></p>
+<div class="reference-field"><p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/dedekind_domain_noetherian_ring.html'>A Dedekind Domain is a Noetherian Ring</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Contains:</strong> <em>None</em></p></div>
 
         </div>
     </div>
@@ -278,8 +296,8 @@ $$</p></div>
 $$ x= p_1p_2\ldots p_n$$ with $n\ge 1$ and this representation is unique in the sense that if $x=q_1\ldots q_m$ with $m\ge 1$ then $m=n$ and there exists a bijection between the $p_i$ and the $q_i$ such that the image $q_j$ of $p_i$ is associated with $p_i$.</p></div>
 
 
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/unique_factorization_domain_gcd_domain.html'>A Unique Factorization Domain is a GCD Domain</a></li></ul></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/principal_ideal_domain_unique_factorization_domain.html'>A Principal Ideal Domain is a Unique Factorization Domain</a></li></ul></p>
+<div class="reference-field"><p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/unique_factorization_domain_gcd_domain.html'>A Unique Factorization Domain is a GCD Domain</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/principal_ideal_domain_unique_factorization_domain.html'>A Principal Ideal Domain is a Unique Factorization Domain</a></li></ul></p></div>
 
         </div>
     </div>
@@ -293,8 +311,8 @@ $$ x= p_1p_2\ldots p_n$$ with $n\ge 1$ and this representation is unique in the 
 <strong>Definition:</strong><div class="text-field"><p>A <strong>principal ideal domain</strong> is an integral domain in which every ideal is principal.</p></div>
 <strong>Description:</strong><div class="text-field"><p>A <strong>principal ideal domain</strong> is an <a href="classes/integral_domain.html">Integral Domain</a> in which every ideal is principal.</p></div>
 
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/principal_ideal_domain_unique_factorization_domain.html'>A Principal Ideal Domain is a Unique Factorization Domain</a></li></ul></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/euclidean_domain_principal_ideal_domain.html'>An Euclidean Domain is a Principal Ideal Domain</a></li></ul></p>
+<div class="reference-field"><p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/principal_ideal_domain_unique_factorization_domain.html'>A Principal Ideal Domain is a Unique Factorization Domain</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/euclidean_domain_principal_ideal_domain.html'>An Euclidean Domain is a Principal Ideal Domain</a></li></ul></p></div>
 
         </div>
     </div>
@@ -308,8 +326,8 @@ $$ x= p_1p_2\ldots p_n$$ with $n\ge 1$ and this representation is unique in the 
 <strong>Definition:</strong><div class="text-field"><p>An <strong>Euclidean domain</strong> $R$ is an integral domain that can be endowed with a function $f:R \backslash \{ 0 \}\to \mathbb{N}$ such that for any $a,b\in R$ with $b\neq 0$, there exists $q,r\in R$ such that $$a=bq+r \mbox{ and } (r=0\mbox{ or } f(r)&lt;f(b))$$ </p></div>
 
 
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/euclidean_domain_principal_ideal_domain.html'>An Euclidean Domain is a Principal Ideal Domain</a></li></ul></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/field_euclidean_domain.html'>A Field is an Euclidean Domain</a></li></ul></p>
+<div class="reference-field"><p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/euclidean_domain_principal_ideal_domain.html'>An Euclidean Domain is a Principal Ideal Domain</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/field_euclidean_domain.html'>A Field is an Euclidean Domain</a></li></ul></p></div>
 
         </div>
     </div>
@@ -324,8 +342,8 @@ $$ x= p_1p_2\ldots p_n$$ with $n\ge 1$ and this representation is unique in the 
 <strong>Description:</strong><div class="text-field"><p>A <strong>field</strong> is a <a href="classes/commutative_ring.html">Commutative Ring</a> where every element nonzero element is a unit, its nonzero elements thus form a multiplicative abelian group.</p>
 <p>A commutative <a href="classes/division_ring.html">Division Ring</a> is thus the same thing as a <a href="classes/field.html">Field</a>.</p></div>
 
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/field_euclidean_domain.html'>A Field is an Euclidean Domain</a></li><li><a href='relationships/field_division_ring.html'>A Field is a Division Ring</a></li></ul></p>
-<p><strong>Contains:</strong> <em>None</em></p>
+<div class="reference-field"><p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/field_euclidean_domain.html'>A Field is an Euclidean Domain</a></li><li><a href='relationships/field_division_ring.html'>A Field is a Division Ring</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Contains:</strong> <em>None</em></p></div>
 
         </div>
     </div>
@@ -339,8 +357,8 @@ $$ x= p_1p_2\ldots p_n$$ with $n\ge 1$ and this representation is unique in the 
 <strong>Definition:</strong><div class="text-field"><p>A <strong>division</strong> is a nontrivial ring where every non-zero element has a multiplicative inverse.</p></div>
 
 <strong>Comments:</strong><div class="text-field"><p>Note that the multiplication may not be commutative. When it is commutative, this is a called a <a href="classes/field.html">Field</a>.</p></div>
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/division_ring_ring.html'>A Division Ring is a Ring</a></li></ul></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/field_division_ring.html'>A Field is a Division Ring</a></li></ul></p>
+<div class="reference-field"><p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/division_ring_ring.html'>A Division Ring is a Ring</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/field_division_ring.html'>A Field is a Division Ring</a></li></ul></p></div>
 
         </div>
     </div>
@@ -354,8 +372,8 @@ $$ x= p_1p_2\ldots p_n$$ with $n\ge 1$ and this representation is unique in the 
 <strong>Definition:</strong><div class="text-field"><p>A <strong>Noetherian ring</strong> is a ring satisfying the ascending chain condition for both left and right ideals.</p></div>
 
 
-<p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/noetherian_ring_ring.html'>A Noetherian Ring is a Ring</a></li></ul></p>
-<p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/dedekind_domain_noetherian_ring.html'>A Dedekind Domain is a Noetherian Ring</a></li></ul></p>
+<div class="reference-field"><p><strong>Contained in:</strong><ul class='fields-list'><li><a href='relationships/noetherian_ring_ring.html'>A Noetherian Ring is a Ring</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Contains:</strong><ul class='fields-list'><li><a href='relationships/dedekind_domain_noetherian_ring.html'>A Dedekind Domain is a Noetherian Ring</a></li></ul></p></div>
 
         </div>
     </div>
@@ -384,6 +402,73 @@ $$ x= p_1p_2\ldots p_n$$ with $n\ge 1$ and this representation is unique in the 
                 tryTypeset();
             });
         </script>
+    <script>
+    let isCompactMode = false;
+    
+    function sortCards(sortBy) {
+        const grid = document.querySelector('.table-grid');
+        const cards = Array.from(grid.querySelectorAll('.table-card'));
+        
+        cards.sort((a, b) => {
+            if (sortBy === 'id') {
+                const idA = parseInt(a.id.replace('math-', '')) || 0;
+                const idB = parseInt(b.id.replace('math-', '')) || 0;
+                return idA - idB;
+            } else if (sortBy === 'name') {
+                const nameA = (a.querySelector('h3 a') || a.querySelector('h3')).textContent.toLowerCase();
+                const nameB = (b.querySelector('h3 a') || b.querySelector('h3')).textContent.toLowerCase();
+                return nameA.localeCompare(nameB);
+            }
+            return 0;
+        });
+        
+        // Clear grid and re-append sorted cards
+        grid.innerHTML = '';
+        cards.forEach(card => grid.appendChild(card));
+    }
+    
+    function filterCards() {
+        const searchTerm = document.getElementById('search-box').value.toLowerCase();
+        const grid = document.querySelector('.table-grid');
+        const cards = grid.querySelectorAll('.table-card');
+        
+        cards.forEach(card => {
+            const name = (card.querySelector('h3 a') || card.querySelector('h3')).textContent.toLowerCase();
+            if (name.includes(searchTerm)) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+    
+    function toggleCompactMode() {
+        isCompactMode = !isCompactMode;
+        const toggleBtn = document.getElementById('compact-toggle');
+        const cards = document.querySelectorAll('.table-card');
+        
+        cards.forEach(card => {
+            // Find all fields with reference type (they contain 'fields-list' ul elements within paragraphs)
+            const details = card.querySelector('.table-details');
+            if (details) {
+                const ref_fields = details.querySelectorAll('.reference-field');
+                ref_fields.forEach(p => {
+                    // Check if this paragraph contains a list (likely a reference field)
+                    if (p.querySelector('ul.fields-list')) {
+                        if (isCompactMode) {
+                            p.style.display = 'none';
+                        } else {
+                            p.style.display = '';
+                        }
+                    }
+                });
+            }
+        });
+        
+        toggleBtn.textContent = isCompactMode ? 'Normal' : 'Compact';
+    }
+    </script>
+    
     </body>
     </html>
     
